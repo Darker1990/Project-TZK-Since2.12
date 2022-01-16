@@ -10,8 +10,9 @@
 		proxyShape = "\Apac\Hellfire_proxy";
 	};
 	class AT6_xj400: AT6 {
-		hit = 800;
+		hit = 600;
 		laserLock = 1;
+		thrust = 400;
 	};
 	class AT6a_RHS_xj400: AT6_xj400 {
 		model = "\TZK_Model_4_0_0\wp\RHS_AT6.p3d";
@@ -41,16 +42,16 @@
 	class Stinger_xj400: AA {
 		hit = 80; indirectHit = 40; indirectHitRange = 5;
 		minRange = 20;minRangeProbab = 0.9;
-		midRange = 1000;midRangeProbab = 0.9;
-		maxRange = 3000;maxRangeProbab = 0.9;
+		midRange = 1500;midRangeProbab = 0.9;
+		maxRange = 3000;maxRangeProbab = 0.1;
 		airLock = 1;
 		cost = 1000;
 		maxControlRange = 3000;
 		maneuvrability = 5.0;
-		maxSpeed = 800;
+		maxSpeed = 400;
 		initTime = 0;
 		thrustTime = 3.0;
-		thrust = 1000;
+		thrust = 500;
 		soundFly[] = {"objects\noise",db-20,1};
 		soundEngine[] = {"objects\noise",db-10,1};
 		visibleFire = 32; audibleFire = 32; visibleFireTime = 4;
@@ -59,7 +60,7 @@
 	class RedTop_26_xj400 : AA {
 		model ="\TZK_Objects\Model\wep\hunt_redtop_Mesh.p3d";
 		proxyshape = "\TZK_Objects\Model\wep\hunt_redtop_Mesh.p3d";
-		hit = 170;indirectHit = 100;indirectHitRange = 10;
+		hit = 80;indirectHit = 50;indirectHitRange = 10;
 		minRange = 50; minRangeProbab = 0.7;
 		midRange = 2000; midRangeProbab = 0.95;
 		maxRange = 2600; maxRangeProbab = 0.6;
@@ -69,7 +70,7 @@
 		thrustTime = 500;
 		maxControlRange = 2600;
 		thrust = 600;
-		maxSpeed = 900;
+		maxSpeed = 450;
 		
 		cost = 200; // This value should be low to make AI use it attack aircraft.
 	};
@@ -84,13 +85,13 @@
 
 	class 9M311_26_xj400: RedTop_26_xj400 {
 		// Refer to DKMM Tunguska and rkthunter.
-		hit = 240;indirectHit = 160;indirectHitRange = 7;
+		hit = 140;indirectHit = 80;indirectHitRange = 7;
 		minRange = 15; minRangeProbab = 0.9;
 		midRange = 2000; midRangeProbab = 0.95;
 		maxRange = 2600; maxRangeProbab = 0.85;
 		airLock = 1; irLock = 1;
 		maxControlRange = 2600;
-		maxSpeed = 900;
+		maxSpeed = 450;
 		
 	//	model = "dkmm_9m311.p3d"; // This model is lacking of texture. Use original OFP model instead.
 	//	model = "AT1"; // This model is better than law, but still not good.
@@ -99,7 +100,7 @@
 	
 		thrustTime = 10;
 		inittime = 0.2;
-		thrust = 1800;
+		thrust = 600;
 		sideAirFriction = 0.5;
 		cost = 200;
 		visibleFire = 12; audibleFire = 2; visibleFireTime = 3;
@@ -120,10 +121,10 @@
 
 	// Guided AT
 	class GuidedAT_APC_xj400: AT3 {
-		hit = 780; indirectHit = 300; indirectHitRange = 2;
+		hit = 900; indirectHit = 450; indirectHitRange = 2;
 		minRange = 50;minRangeProbab = 0.9;
-		midRange = 1000;midRangeProbab = 0.9;
-		maxRange = 1500;maxRangeProbab = 0.6;
+		midRange = 1500;midRangeProbab = 0.9;
+		maxRange = 2500;maxRangeProbab = 0.6;
 		cost = 1000
 		manualControl = false
 		maxControlRange = 1000
@@ -137,9 +138,6 @@
 		visibleFire = 32; audibleFire = 32; visibleFireTime = 4
 	};
 	class GuidedAT_Heli_xj400: GuidedAT_APC_xj400 {
-		hit = 1275; indirectHit = 600; indirectHitRange = 2;
-		minRange = 100;minRangeProbab = 0.9;
-		maneuvrability = 5.0;
 		proxyShape = "\Apac\Hellfire_proxy";
 	};
 	class GuidedAT_Cobra_xj400: GuidedAT_Heli_xj400 {

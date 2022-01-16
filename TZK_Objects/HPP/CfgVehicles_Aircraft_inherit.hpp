@@ -1,5 +1,11 @@
 // Helicopter
-#define SpoofMagazines "SpoofSwitch_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400"
+#define SpoofMagazines "SpoofSwitch_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", \
+"SpoofSwitch_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", \
+"SpoofSwitch_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", \
+"SpoofSwitch_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", \
+"SpoofSwitch_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", \
+"SpoofSwitch_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400", "SpoofCount_xj400" 
+
 	// The precision enlarged for Helicopters in TZK_3.00 is recovered. Didn't spot something different.
 	// Standard Transport Helicopter
 	class Mi17_xj400: Mi17 {
@@ -1358,14 +1364,14 @@
 	class AH64_MPIV_xj400: AH64_MPIV_Base_xj400 {
 		scope = protected;
 		accuracy = 1000;
-		armor = 80;
+		armor = 75;
 		displayName = "AH64";
 	};
 	class AH64_MPIV_AT_xj400: AH64_MPIV_Base_xj400 {
 		scope = protected;
 		accuracy = 1000;
 		irScanRangeMin = 1000; irScanToEyeFactor = 0.75;
-		armor = 100; //x1.25
+		armor = 120; //x1.25
 		displayName = "AH64 AT";
 		weapons[] = {ATLauncherAir_xj400, Cannon_20HE_xj400, Cannon_20AP_xj400};
 		magazines[]={GuidedAT_Heli_8_xj400, Mag_20HE_800_01_xj400, Mag_20AP_200_01_xj400, SpoofMagazines};
@@ -1955,7 +1961,7 @@
 		scope = protected;
 		accuracy = 1000;
 		displayName = "Mi24 AT";
-		irScanRangeMin = 1000; irScanToEyeFactor = 0.75;
+		irScanRangeMin = 1000; irScanToEyeFactor = 1.5;
 		armor = 125; //x1.25
 		class ReloadAnimations {
 			class CannonE_20HE_xj400 {
@@ -1997,7 +2003,13 @@
 		access = 2;
 		crew = "SoldierEPilot";
 		maxSpeed = 400;
-
+		armorHull=1.0;
+		armorEngine=1.0;
+		armorAvionics=1.0;
+		armorVRotor=1.0;
+		armorHRotor=1.0;
+		armorMissiles=1.0;
+		armorGlass=0.5;
 		rotorBig = "hip_vrt_v";
 		rotorBigBlend = "hip_vrtblur_v";
 		rotorSmall = "vrthind_m";
@@ -2106,12 +2118,12 @@
 	class Ka50_AT_xj400: Kamov_Base_xj400 {
 		scope = protected;
 		accuracy = 1000;
-		irScanRangeMin = 1000; irScanToEyeFactor = 0.75;
-		armor = 90; // = 75 x 1.2
+		irScanRangeMin = 2000; irScanToEyeFactor = 1.5;
+		armor = 100; // = 75 x 1.3
 		displayName = "Ka50 AT";
 		laserScanner = 1;
-		weapons[] = {ATLauncherAir_xj400, CannonE_20HE_xj400, CannonE_20AP_xj400};
-		magazines[]={GuidedAT_Heli_12_xj400, Mag_20HE_800_01_xj400, Mag_20AP_200_01_xj400, SpoofMagazines};
+		weapons[] = {ATLauncherAir_xj400, CannonE_20HE_xj400, CannonE_20AP_xj400, "Rocket57x40Kamov_xj400"};
+		magazines[]={GuidedAT_Heli_12_xj400, Mag_20HE_800_01_xj400, Mag_20AP_200_01_xj400, "Rocket57x40Kamov_xj400", SpoofMagazines};
 	};
 
 	class Tiger_RMK30_xj400: Helicopter {
@@ -2719,7 +2731,7 @@
 		accuracy = 0.30;
 		displayName = "$STR_DN_SU25"; nameSound = "plane"; side = 0; cost = 20000000; type = 2; threat[] = {0.1,1,0.7};
 
-		armor = 24;
+		armor = 100;
 		model = "\su25\su25";
 		picture = "\su25\isu25";
 
@@ -2727,7 +2739,7 @@
 		driverAction = "ManActA10Pilot";
 		fov = 0.5;
 
-		maxSpeed = 800;
+		maxSpeed = 1100;
 		weapons[] = {"Ch29TLauncher_xj400", "Rocket57x64", "MachineGun30A10"};
 		magazines[]={"Ch29TLauncher_xj400", "Rocket57x64", "MachineGun30A10", SpoofMagazines, "AfterBurnerSwitch_xj400"};
 
@@ -2872,7 +2884,7 @@
 		ejectSpeed[] = {0,0,0};
 		getInRadius = 1.5;
 
-		maxSpeed = 600;
+		maxSpeed = 150;
 		//landingSpeed = 180;
 
 		soundEngine[] = {"\TZK_Sounds_4_0_0\HWK_C130\engine.wss",db-10,1};
@@ -2886,7 +2898,7 @@
 		elevatorSensitivity = 1; // relative elevator sensitivity
 		brakeDistance = 250;
 		noseDownCoef =  0.1; // how much goes nose down during turns
-		irTarget = 1;
+		irTarget = 0;
 		fov = 0.5;
 
 		dammageHalf[] = { kiowa_sklo.paa,uh60_kab_sklo2B.paa };
@@ -3405,7 +3417,7 @@
 	class C130_xj400: C130_Base_xj400 {
 		scope = protected;
 		accuracy = 1000; // Important for aircrafts used in CTI
-		armor = 100; // the exact armor value in son class (original value in addon is 150)
+		armor = 150; // the exact armor value in son class (original value in addon is 150)
 		model = "\TZK_Model_4_0_1\C130.p3d";
 		hiddenSelections[] = {tzk_tex_00, 
 			tex_Auxtanks.paa, tex_C130fslg.paa, tex_C130PRP1.paa, tex_door.paa, tex_FIN&RDDR.paa, tex_hztlstbl.paa, tex_hztlstbr.paa, tex_nacelles.paa, tex_prop.paa, tex_wingleft.paa, tex_wingrght.paa
@@ -3471,7 +3483,7 @@
 	class C130_Support_xj400: C130_xj400 {
 		displayName = "C-130 Support";
 		transportFuel = 100000; // Allow players use it to refuel.
-		maxSpeed = 400; // Fly slower for A10 to get close easier.
+		maxSpeed = 150; // Fly slower for A10 to get close easier.
 	};
 	class An12_Base_xj400: Plane {
 		scope = private; vehicleClass = "TZK_Units_400";
@@ -3496,7 +3508,7 @@
 		formationZ = 300;
 		formationTime = 30;
 		precision = 500;//200
-		maxSpeed = 750;
+		maxSpeed = 950;
 		aileronSensitivity = 1;
 		elevatorSensitivity = 2;
 		noseDownCoef = 1;
@@ -3717,7 +3729,7 @@
 
 		irTarget = 1; irScanGround = 0;
 
-		maxSpeed = 650;
+		maxSpeed = 950;
 		brakeDistance = 10; 
 		aileronSensitivity = 0.8;
 		elevatorSensitivity = 1.5; 
@@ -3883,7 +3895,7 @@
 	class AN72_Support_xj400: AN72_xj400 {
 		displayName = "An-72 Support"; // However An12 is not a support plane. But IL-76 too tough thus still use An12.
 		transportFuel = 100000; // Allow players use it to refuel.
-		maxSpeed = 430; // Fly slower for Su25 to get close easier.
+		maxSpeed = 950; // Fly slower for Su25 to get close easier.
 	};
 	// Rough modeled AirPlanes. Model files are deleted. If editors wish to use some of them, search files and correct definitions in TZK_2.10 please.
 

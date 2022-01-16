@@ -36,9 +36,12 @@
 		sound[] = {"\bmp2\bmp2_cannon",3.16228,1};
 		reloadSound[] = {"Weapons\reload",0.000316228,1};
 		backgroundReload = 1;
+		dispersion = 0.010;
 		ffMagnitude = 1;
 		ffFrequency = 5;
-		magazines[]={Cannon30HE_BMP2_xj400,Cannon30AP_BMP2_xj400};
+		magazines[]={Cannon30HE_BMP2_xj400,Cannon30AP_BMP2_xj400};	
+		aiRateOfFire = 0.3;
+		aiRateOfFireDistance = 1000;
 	};
 
 	class Cannon30HE_Kamov_xj400: Default {
@@ -95,6 +98,7 @@
 		ammo = Cannon25HE_xj400;
 		count = 300;
 		reloadTime = 0.14;
+		dispersion=0.010;
 		initSpeed = 1000;
 		sound[] = {"\m2a2\cannon.wss",3.16228,1};
 		flashSize = 1.1;
@@ -102,6 +106,8 @@
 		optics = 1;
 		ffCount = 1;
 		multiplier = 2;
+		aiRateOfFire = 0.3;
+		aiRateOfFireDistance = 1000;
 	};
 	class VulcanCannon_xj400: MachineGun30 {
 		ammo = Bullet4x20_xj400;
@@ -113,7 +119,7 @@
 		displayName = "$STR_DN_VULCAN20";
 		displayNameMagazine = "$STR_DN_VULCAN20";
 		shortNameMagazine = "$STR_DN_VULCAN20";
-		dispersion = 0.0015;
+		dispersion = 0.010;
 		maxLeadSpeed = 900;
 		aiRateOfFire = 0.3;
 		aiRateOfFireDistance = 3000;
@@ -124,6 +130,14 @@
 		flashSize=1.1;
 		soundContinuous=1;
 	};
+	
+	class ZsuCannon_xj400: ZsuCannon 
+	{
+		ammo="Bullet4x23_xj400";
+		initSpeed=800;
+		dispersion = 0.010;
+	};
+		
 	class Tunguska_30mm_DKM_xj400: ZsuCannon {
 		displayName = "30mm";
 		

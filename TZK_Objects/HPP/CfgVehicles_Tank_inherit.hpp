@@ -14,6 +14,8 @@
 		
 		gunnerCanSee = "4+8+16 +1";
 		driverCanSee = "2+8+16 +1"; // Extend Radar-can-see in TZK for gunner/driver seat.
+		
+
 	};
 	class RussianTank_xj400: Tank_xj400 {
 		accuracy = 0.35;
@@ -262,6 +264,8 @@
 		accuracy = 0.5;
 		hiddenSelections[] = {};
 		armor = 700;
+		armorStructural = 2.0;
+		irScanToEyeFactor = 0.616;
 		cost = 1500000;
 		weapons[] = {"Gun120","MachineGun12_7"};
 		magazines[] = {"Heat120","Shell120","MachineGun12_7"};
@@ -303,7 +307,7 @@
 				, tzk_tex_99
 		};
 		//Strengthen M1A1's armor to T80N's level by increasing armor.
-		armor = 1350; armorStructural = 2.0 * 1400/1350;
+		armor = 700; armorStructural = 2.0;
 		
 		// driverCanSee = "1+2+8+16"; gunnerCanSee = "1+4+8+16"; // Special benifit for M1A1, M1A2.
 		irScanToEyeFactor = 0.616; // Special radar setting in TZK.
@@ -340,7 +344,7 @@
 			tex_2418i.paa,tex_3-4-67.paa,tex_4-67.paa,tex_bandits.paa,tex_ch_alpha.paa,tex_ch_char.paa,tex_goaway.paa,tex_skull.paa,tex_spearhead.paa,tex_timetodie.paa,tex_warhorse.paa,tex_warhorse1.paa,tex_warhorse2.paa
 				, tzk_tex_99
 		};
-		armor = 1350; armorStructural = 2.0 * 1500/1350;
+		armor = 800; armorStructural = 2.0;
 		maxSpeed = 67;
 		
 		gunnerOpticsModel = "\TZK_Model_4_0_0\Opt\M1A2_Gun.p3d"; gunnerOpticsColor[] = {0,0,0,1};
@@ -516,7 +520,7 @@
 				, tzk_tex_99
 		};
 		maxSpeed = 70;
-		armor = 1350; armorStructural = 2.0 * 1500/1350;
+		armor = 850; armorStructural = 2.0;
 		irScanToEyeFactor = 0.616; // Special radar setting in TZK.
 		
 		weapons[] = {"LeoGun_xj400","LeoMG_xj400"};
@@ -723,7 +727,7 @@
 		class EventHandlers {Init = "_vehicle = _this select 0; [_vehicle, {C}] exec {\TZK_Objects\Scripts\texture\T80.sqs}; _vehicle animate [{suspension}, 0.5]";};
 		
 		// Necessary for T80 to redefine cost and armor in CTI, make them totally same as M1A1.
-		armor = 1350; armorStructural = 2.0 * 1500/1350;
+		armor = 700; armorStructural = 2.0;
 		irScanToEyeFactor = 0.616; // Special radar setting in TZK.
 		
 		gunnerInAction = "ManActM1A1Gunner";
@@ -754,7 +758,7 @@
 		model = "\TZK_Model_4_0_0\T90_ICP.p3d";
 		hiddenSelections[] = {"TR","pl","fire1","fire2","fire3","fire4","fire5","fire6","rak1","rak2","rak3","rak4","Flag", "n1", "n2", "n3"};
 		picture = "\TZK_Texture_4_0_0\icon\iT90.paa";
-		armor = 1350; armorStructural = 2.0 * 1500/1350;
+		armor = 800; armorStructural = 2.0;
 		irScanToEyeFactor = 0.616; // Special radar setting in TZK.
 		class EventHandlers {
 			Init = "_vehicle = _this select 0; _vehicle animate [{suspension}, 0.5]; [_vehicle, {\TZK_Texture_4_0_0\DKMM\}] exec {\TZK_Objects\Scripts\texture\RSC_Numbers.sqs}";
@@ -864,7 +868,7 @@
 			tzk_tex_99
 		};
 		picture = "\TZK_Texture_4_0_0\icon\iT90ms.paa";
-		armor = 1350; armorStructural = 2.0;
+		armor = 850; armorStructural = 2.0;
 		
 		gunnerOpticsModel = "\TZK_Model_4_0_0\Opt\t90ms_g.p3d";
 		commanderOpticsModel = "\TZK_Model_4_0_0\Opt\t90ms_c.p3d";
@@ -1007,7 +1011,7 @@
 		picture = "\TZK_Texture_4_0_0\icon\iZTZ99.paa";
 
 		maxSpeed = 70;
-		armor = 1350; armorStructural = 2.0;
+		armor = 900; armorStructural = 2.0;
 		irScanToEyeFactor = 0.616; // Special radar setting in TZK.
 		class EventHandlers {
 			Init = "_vehicle = _this select 0; _vehicle animate [{suspension}, 0.5]; [_vehicle, {\TZK_Texture_4_0_0\BWMOD\leo2A6\num\}, {n}, {0}] exec {\TZK_Objects\Scripts\texture\RSC_Numbers.sqs}";
@@ -1130,7 +1134,7 @@
 		displayName = "$STR_DN_M60";
 		nameSound = "M60";
 		accuracy = 0.7;
-		armor = 300;
+		armor = 600;
 		cost = 800000;
 		type = 1;
 		threat[] = {1,0.6,0.2};
@@ -1153,7 +1157,7 @@
 		displayName = "$STR_DN_T72";
 		nameSound = "t72";
 		accuracy = 0.5;
-		armor = 400;
+		armor = 600;
 		cost = 1000000;
 		type = 1;
 		threat[] = {0.9,0.8,0.2};
@@ -1188,7 +1192,7 @@
 		};
 		
 		displayName = "M60-120S"; cost = 2400000; threat[] = {1, 1, 0.5};
-		armor = 400;
+		armor = 600;
 		class HatchCommander {
 			selection = "poklop_commander";
 			axis = "osa_poklop_commander";
@@ -1211,7 +1215,7 @@
 		
 		nameSound = "t55";
 		accuracy = 0.7;
-		armor = 300;
+		armor = 500;
 		cost = 150000;
 		type = 1;
 		threat[] = {1,1,0.2};
@@ -1236,7 +1240,7 @@
 		
 		nameSound = "t55";
 		accuracy = 0.7;
-		armor = 300;
+		armor = 500;
 		cost = 150000;
 		type = 1;
 		threat[] = {1,1,0.2};
@@ -1596,7 +1600,7 @@
 		model = "\TZK_Model_4_0_0\TOS1_DKMM.p3d";
 		hiddenSelections[] ={"n1", "n2", "n3", "lidF","lidR", "TZK_Grad1","TZK_Grad2","TZK_Grad3","TZK_Grad4","TZK_Grad5","TZK_Grad6", "m01","m02","m03","m04","m05","m06","m07","m08","m09","m10","m11","m12","m13","m14","m15","m16","m17","m18","m19","m20","m21","m22","m23","m24","m25","m26","m27","m28","m29","m30"};
 		
-		armor = 250;
+		armor = 600;
 		irScanToEyeFactor = 0.616; // Special radar setting in TZK.
 		laserscanner = 1;
 		
@@ -1697,7 +1701,7 @@
 			Killed = "_this exec {\TZK_Objects\Scripts\Killed_EH\DestroyAllSelections.sqs}";
 		};
 		gunnerOpticsModel = "\TZK_Model_4_0_0\Opt\ViewGunner_Grad.p3d";
-		armor = 250;
+		armor = 600;
 		class GunFire: WeaponFireGun { size = 0; };
 		class GunClouds: WeaponCloudsGun { size = 0; }; // Rocket Launcher using EH to create effects.
 		
@@ -1808,7 +1812,7 @@
 			Init = "_vehicle = _this select 0; [_vehicle, {C}] exec {\TZK_Objects\Scripts\texture\2S6.sqs}; [_vehicle, {C}] exec {\TZK_Objects\Scripts\InitEventHandlers\2S6.sqs}";
 		//	Fired = "_this exec {\TZK_Objects\Scripts\Fired_EH\2S6.sqs}";
 		};
-		armor = 90; armorStructural = 4;
+		armor = 600; armorStructural = 4;
 		fuelCapacity = 375;
 
 		weapons[] = {"Tunguska_30mm_DKM_xj400", "9M311_26_xj400"};
@@ -2061,6 +2065,11 @@
 */
 	class ZSU_xj400: ZSU {
 		scope = protected; vehicleClass = "TZK_Units_400";
+		armor = 500;
+		weapons[]={"ZsuCannon_xj400"};
+		magazines[]={"ZsuCannon_xj400"};
+		gunnerCanSee = "4+8+16 +1";
+		driverCanSee = "2+8+16 +1"; // Extend Radar-can-see in TZK for gunner/driver seat.
 
 		class IndicatorTurret {
 			selection = "ukazsmer";
@@ -2108,6 +2117,11 @@
 			};
 		};
 	};
+	
+	class ZSURes_xj400: ZSU_xj400 {
+		side = 2;
+	};
+		
 	class ZSU_MNF_xj400: ZSU_xj400 {
 		scope = protected;
 		// weapons[] = {RedTop_26_xj400};

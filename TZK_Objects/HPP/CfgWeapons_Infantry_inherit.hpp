@@ -101,8 +101,8 @@
 		modelOptics = "\TZK_Weapon_4_0_0\LSR_uswp\opt_acog.p3d";
 		optics = 1;
 		opticsFlare = 0;
-		opticsZoomMin = 0.16;
-		opticsZoomMax = 0.16;
+		opticsZoomMin = 0.01;
+		opticsZoomMax = 0.1;
 		picture = "\TZK_Texture_4_0_0\Picture\LSR_uswp\w_m4sopmodsd.paa";
 		modes[]={"this","this"};
 		magazines[]={"M4_SD_Mag_xj400"};
@@ -121,8 +121,8 @@
 			displayName = "M203";
 			modelOptics = "\TZK_Weapon_4_0_0\LSR_uswp\opt_m203.p3d";
 			optics = 1;
-			opticsZoomMin = 0.4;
-			opticsZoomMax = 0.4;
+			opticsZoomMin = 0.01;
+			opticsZoomMax = 0.1;
 			drysound[] = {"weapons\M16dry",db-40,1};
 			magazines[]={"GrenadeLauncher","Flare","FlareGreen","FlareRed","FlareYellow","M203_Grenade_xj400","M203_Vest_xj400"};
 			reloadMagazinesound[] = {"\TZK_Sounds_4_0_0\LSR\M203_reload.wss",0.010316,1};
@@ -204,8 +204,8 @@
 		drySound[]={"weapons\AK74Dry",db-40,1};
 		modelOptics = "\TZK_Weapon_4_0_0\C8X_russ\optic_1P29_sd.p3d";
 		optics = 1;
-		opticsZoomMin = 0.16;
-		opticsZoomMax = 0.16;
+		opticsZoomMin = 0.01;
+		opticsZoomMax = 0.1;
 		opticsFlare = 0;
 		magazines[]={"AK74_SD_Mag_xj400"};
 		modes[]={"this","this"};
@@ -223,8 +223,8 @@
 			displayName = "GP25";
 			modelOptics = "\TZK_Weapon_4_0_0\C8X_russ\optic_gl.p3d";
 			optics = 1;
-			opticsZoomMin = 0.4;
-			opticsZoomMax = 0.4;
+			opticsZoomMin = 0.01;
+			opticsZoomMax = 0.1;
 			reloadMagazineSound[]={"\TZK_Sounds_4_0_0\C8X\east_g_reload.wss",0.010316,1};
 			drySound[]={"weapons\AK74Dry",db-40,1};
 			magazines[]={"GrenadeLauncher","Flare","FlareGreen","FlareRed","FlareYellow","GP25_Grenade_xj400","GP25_Vest_xj400"};
@@ -277,8 +277,8 @@
 		modes[]= {"this","this","this"};
 		modelOptics = "\TZK_Weapon_4_0_0\JahSG551\sg551_optika.p3d";
 		opticsFlare= 1;
-		opticsZoomMin = 0.04;
-		opticsZoomMax = 0.12;
+		opticsZoomMin = 0.01;
+		opticsZoomMax = 0.1;
 		distanceZoomMin = 400;
 		distanceZoomMax = 80;
 		flash = "gunfire";
@@ -351,8 +351,8 @@
 		modes[]= {"this","this"};
 		modelOptics = "\TZK_Weapon_4_0_0\mVSS\mVSS_optika.p3d";
 		optics = 1;
-		opticsZoomMin = 0.08;
-		opticsZoomMax = 0.08;
+		opticsZoomMin = 0.01;
+		opticsZoomMax = 0.1;
 		distanceZoomMin = 400;
 		distanceZoomMax = 400;
 		flashSize = 0;
@@ -452,8 +452,8 @@
 		reloadMagazineSound[]={"\TZK_Sounds_4_0_0\ICP_rfwp\valreload.wss",0.010316,1};
 		modelOptics = "\TZK_Weapon_4_0_0\ICP_rfwp\opt_val.p3d";
 		optics = 1;
-      	opticsZoomMin = 0.28;
-		opticsZoomMax = 0.28;
+      	opticsZoomMin = 0.01;
+		opticsZoomMax = 0.1;
       	distanceZoomMin = 400;
 		distanceZoomMax = 400;
 		flashSize = 0;
@@ -467,8 +467,8 @@
 		picture = "\TZK_Texture_4_0_0\Picture\ICP_rfwp\w_valpso.paa";
 		modelOptics = "\TZK_Weapon_4_0_0\ICP_rfwp\opt_vss.p3d";
 
-      	opticsZoomMin = 0.05;
-		opticsZoomMax = 0.05;
+      	opticsZoomMin = 0.01;
+		opticsZoomMax = 0.1;
       	distanceZoomMin = 600;
 		distanceZoomMax = 600;
 	};
@@ -520,8 +520,8 @@
 
 		reloadMagazineSound[]={"\TZK_Sounds_4_0_0\ICP_rfwp\valreload.wss",0.010316,1};
 		optics = 1;
-      	opticsZoomMin = 0.05;
-		opticsZoomMax = 0.05;
+      	opticsZoomMin = 0.01;
+		opticsZoomMax = 0.1;
       	distanceZoomMin = 600;
 		distanceZoomMax = 600;
 		flashSize = 0;
@@ -539,8 +539,8 @@
 		uipicture = "\TZK_Texture_4_0_0\Picture\LSR_uswp\isniper.paa";
 		modelOptics = "\TZK_Weapon_4_0_0\LSR_uswp\opt_m24.p3d";
 		optics = 1;
-		opticsZoomMin = 0.07;
-		opticsZoomMax = 0.07;
+		opticsZoomMin = 0.01;
+		opticsZoomMax = 0.1;
 
 		drysound[] = {"weapons\m16dry",db-70,1};
 		reloadSound[] = {"\TZK_Sounds_4_0_0\LSR\m24boltload.wss",0.010316,1};
@@ -609,8 +609,8 @@
 		picture = "\TZK_Texture_4_0_0\Picture\ICP_rfwp\w_svds.paa";
 
 		optics = 1;
-		opticsZoomMin = 0.05;
-		opticsZoomMax = 0.05;
+		opticsZoomMin = 0.01;
+		opticsZoomMax = 0.1;
 		distanceZoomMin = 600;
 		distanceZoomMax = 600;
 		drySound[]={"weapons\AK74Dry",1,1};
@@ -628,8 +628,8 @@
 		modelOptics = "\TZK_Weapon_4_0_0\LSR_uswp\opt_mildot_sd.p3d";
 		optics = 1;
 		opticsFlare = 0;
-		opticsZoomMin = 0.0205;
-		opticsZoomMax = 0.0205;
+		opticsZoomMin = 0.01;
+		opticsZoomMax = 0.1;
 		magazines[]={"M82A1_AP_Mag_xj400","M82A1_IT_Mag_xj400", "M82A1_Mag_xj400"};
 		reloadMagazinesound[] = {"\TZK_Sounds_4_0_0\LSR\M16reload.wss",0.010316,1};
 	//	modes[]={"Single"};
@@ -734,7 +734,7 @@
 
 		modelOptics = "\TZK_Weapon_4_0_0\KSVK\KSVKscope.p3d";
 		optics = 1;
-		opticsZoomMin = 0.02; 
+		opticsZoomMin = 0.01; 
 		opticsZoomMax = 0.1;
 		distanceZoomMin = 400;
 		distanceZoomMax = 400;
@@ -784,8 +784,8 @@
 		modelOptics = "\TZK_Weapon_4_0_0\LSR_uswp\opt_acog.p3d";
 		optics = 1;
 		opticsFlare = 0;
-		opticsZoomMin = 0.16;
-		opticsZoomMax = 0.16;
+		opticsZoomMin = 0.01;
+		opticsZoomMax = 0.1;
 		reloadSound[] = {"\TZK_Sounds_4_0_0\LSR\m240belt.wss",0.010316,1};
 		backgroundReload = 1;
 		magazines[]={"M249SPW_Mag_xj400"};
@@ -910,8 +910,8 @@
 		drySound[]={"weapons\AK74Dry",db-40,1};
 		modelOptics = "\TZK_Weapon_4_0_0\C8X_russ\optic_1P29_def.p3d";
 		optics = 1;
-		opticsZoomMin = 0.16;
-		opticsZoomMax = 0.16;
+		opticsZoomMin = 0.01;
+		opticsZoomMax = 0.1;
 		opticsFlare = 0;
 		magazines[]={"RPK74_Mag_xj400"};
 		modes[]={"Single","FullAuto"};
@@ -970,8 +970,8 @@
 		modelOptics = "\TZK_Weapon_4_0_0\LSR_uswp\opt_m145.p3d";
 		optics = 1;
 		opticsFlare = 0;
-		opticsZoomMin = 0.2;
-		opticsZoomMax = 0.2;
+		opticsZoomMin = 0.01;
+		opticsZoomMax = 0.1;
 		distanceZoomMin = 300;
 		distanceZoomMax = 300;
 
@@ -1020,8 +1020,8 @@
 		modelOptics = "\TZK_Weapon_4_0_0\LSR_uswp\opt_acog_m60e4.p3d";
 		optics = 1;
 		opticsFlare = 0;
-		opticsZoomMin = 0.16;
-		opticsZoomMax = 0.16;
+		opticsZoomMin = 0.01;
+		opticsZoomMax = 0.1;
 		distanceZoomMin = 300;
 		distanceZoomMax = 300;
 		reloadSound[] = {"\TZK_Sounds_4_0_0\LSR\m240belt.wss",0.010316,1};
@@ -1096,8 +1096,8 @@
 		//	modelOptics = "\TZK_Weapon_4_0_0\ICP_rfwp\opt_pkm.p3d";
 			modelOptics = "\TZK_Weapon_4_0_0\C8X_russ\optic_1P29_def.p3d";
 			optics = 1;
-			opticsZoomMin = 0.16;
-			opticsZoomMax = 0.16;
+			opticsZoomMin = 0.01;
+			opticsZoomMax = 0.1;
    			distanceZoomMin = 400;
    			distanceZoomMax = 400;
 			magazines[]={"PKM_Mag_xj400","PK"};
@@ -1105,25 +1105,27 @@
 	};
 
 
-	// 4*Mag's AT/AA Magazine(Mode) & Launcher(Muzzle)
+	// 2*Mag's AT/AA Magazine(Mode) & Launcher(Muzzle)
 	class CarlGustavIn4_xj400: CarlGustavLauncher {
-		magazineType = "4 * 256";
+		magazineType = "3 * 256";
 		picture = "\dtaExt\equip\m\m_carlgustavlauncher.paa";
 		displayNameMagazine = "Carl Gustav*";
 		shortNameMagazine = "Carl Gustav*";
+		ammo="CarlGustav_xj400";
 
 		displayName = "Carl Gustav*";
 	};
 	class AT4In4_xj400: AT4Launcher {
-		magazineType = "4 * 256";
+		magazineType = "3 * 256";
 		picture = "\dtaExt\equip\m\m_at4launcher.paa";
 		displayNameMagazine = "AT4*";
 		shortNameMagazine = "AT4*";
+		ammo="AT4_xj400";
 
 		displayName = "AT4*";
 	};
 	class AAIn4_xj400: AALauncher {
-		magazineType = "4 * 256";
+		magazineType = "3 * 256";
 		picture = "\dtaExt\equip\m\m_aalauncher.paa";
 		displayNameMagazine = "AA*";
 		shortNameMagazine = "AA*";
@@ -1131,7 +1133,7 @@
 		displayName = "AA*";
 	};
 	class 9k32In4_xj400: 9K32Launcher {
-		magazineType = "4 * 256";
+		magazineType = "3 * 256";
 		picture = "\dtaExt\equip\m\m_9k32launcher.paa";
 		displayNameMagazine = "9k32 Strela*";
 		shortNameMagazine = "9k32*";
@@ -1140,10 +1142,39 @@
 	};
 	class HyperLauncher_xj400: CarlGustavLauncher {
 		displayName = "Hyper Launcher";
-		magazines[]={"CarlGustavIn4_xj400","AAIn4_xj400","AT4In4_xj400","9k32In4_xj400","CarlGustavLauncher","AALauncher","AT4Launcher","9K32Launcher","LAWLauncher","RPGLauncher"};
+		magazines[]={"CarlGustavIn4_xj400","AAIn4_xj400","AT4In4_xj400","9k32In4_xj400","RPGLauncher_xj400","LAWLauncher_xj400","CarlGustavLauncher","AALauncher","AT4Launcher","9K32Launcher","LAWLauncher","RPGLauncher"};
 		picture = "\dtaExt\equip\w\w_carlgustavlauncher.paa";
 		canlock = 2;
+		magazineReloadTime=8;
+		opticsZoomMin = 0.01;
+		opticsZoomMax = 0.1;
 	};
+	//Custom RPG and LAW launcher for strong RPG and LAW'same
+	
+	class RPGLauncher_xj400:RPGLauncher
+		{
+		ammo="RPGGrenade_xj400";
+		displayName= "RPG TZK";
+		displayNameMagazine="RPG Grenade TZK";
+		shortNameMagazine="RPG TZK";
+		picture = "\dtaExt\equip\m\m_rpglauncher.paa";
+		magazineReloadTime=8;
+		opticsZoomMin = 0.01;
+		opticsZoomMax = 0.1;
+		};
+	
+		class LAWLauncher_xj400:LAWLauncher
+		{
+		ammo="LAWGrenade_xj400";
+		displayName="LAW TZK";
+		displayNameMagazine="$RPG Grenade TZK";
+		shortNameMagazine="LAW TZK";
+		picture = "\dtaExt\equip\m\m_lawlauncher.paa";
+		magazineReloadTime=8;
+		opticsZoomMin = 0.01;
+		opticsZoomMax = 0.1;
+		};
+		
 	// SMAW and RPG16d from SUCH
 	class SMAWLauncher_xj400: LAWLauncher {
 		displayName = "SMAW";
@@ -1231,8 +1262,8 @@
 		reloadMagazineSound[]={"\TZK_Sounds_4_0_0\SUCHSJAV\jav_reload.wss",0.010316,1};
 		magazines[]={"JavelinLauncher_Mag_xj400","JavelinLauncher_Weak_Mag_xj400"};
 		dexterity = 0.9;  // Mako - Makes AI slow at Aiming
-		opticsZoomMin = 0.04;
-		opticsZoomMax = 0.12;
+		opticsZoomMin = 0.01;
+		opticsZoomMax = 0.1;
 		distanceZoomMin = 40; // experiment to make AI fire it up
 		distanceZoomMax = 80;
 
@@ -1258,8 +1289,73 @@
 		ammo = "Javelin_Ammo_Weak_xj400";
 		magazineType = "3 * 256";
 	};
+			
+	//Custom MM1 & 6G30 to be used in secondary slot.
+	
+	class Mm1Base_xj400: GrenadeLauncher
+		{
+		scopeWeapon=1;
+		scopeMagazine=1;
+		weaponType=2;
+		magazineType=32;
+		initSpeed=130;
+		maxLeadSpeed=50;
+		displayName="$STR_DN_MM1";
+		displayNameMagazine="$STR_DN_MM1_MAG";
+		shortNameMagazine="$STR_DN_MM1";
+		count=12;
+		reloadTime=0.5;
+		magazineReloadTime=12;
+		model="\MM-1\MM-1";
+		modelOptics="\MM-1\optika_MM-1";
+		picture="\MM-1\mm-1.paa";
+		revolving="buben";
+		revolvingAxis="osa_buben";
+		};
+		
+	class MM1_xj400: MM1base_xj400 {
+		scopeWeapon=2;
+		magazines[]={"MM1Magazine_xj400"};
+	};
+		
+	class MM1Magazine_xj400: MM1_xj400	{
+		scopeMagazine=2;
+		picture="\dtaExt\equip\m\m_flaregreen.paa";
+	};
+	
+	class 6G30Base_xj400: GrenadeLauncher
+		{
+		scopeWeapon=1;
+		scopeMagazine=1;
+		weaponType=2;
+		magazineType=32;
+		initSpeed=130;
+		maxLeadSpeed=50;
+		displayName="$STR_DN_6G30";
+		displayNameMagazine="$STR_MN_6G30";
+		shortNameMagazine="$STR_SN_6G30";
+		count=12;
+		reloadTime=0.5;
+		magazineReloadTime=12;
+		model="\6g30\6g30";
+		modelOptics="\6g30\optika_6g30";
+		picture="\6g30\6g30.paa";
+		revolving="buben";
+		revolvingAxis="osa_buben";
+		};
 
-
+	class 6G30_xj400: 6G30Base_xj400
+		{
+		scopeWeapon=2;
+		magazines[]={"6G30Magazine_xj400"};
+		};
+	
+	class 6G30Magazine_xj400: 6G30Base_xj400
+		{
+		scopeMagazine=2;
+		picture="\dtaExt\equip\m\m_flarered.paa";
+		};	
+			
 	// Modified Mortar and GrenadeLauncher(For AI Only. Players surely know how to use them hence unnecessary to modify for player)
 	class MortarRapid_xj400: Mortar {
 		picture = "\dtaExt\equip\m\m_mortar.paa";
@@ -1516,8 +1612,8 @@
 		
 		modelOptics = "\TZK_Weapon_4_0_0\EUDMP5\optik.p3d";
 		optics = 1;
-		opticsZoomMin = 0.35;
-		opticsZoomMax = 0.35;
+		opticsZoomMin = 0.01;
+		opticsZoomMax = 0.1;
 		drysound[] = {"weapons\M16dry",db-40,1};
 		reloadMagazinesound[] = {"\TZK_Sounds_4_0_0\EUDEF_MP5SD6\Reload.wss",db-40,1};
 		magazines[]={"EUDEF_MP5SD6_MAG_xj400"};
@@ -1583,8 +1679,8 @@
 		
 		modelOptics = "\TZK_Weapon_4_0_0\Gro\scope.p3d";
 		optics = 1;
-		opticsZoomMin = 0.25;
-		opticsZoomMax = 0.25;
+		opticsZoomMin = 0.01;
+		opticsZoomMax = 0.1;
 		drysound[] = {"\Sound\weapons\M16dry.wss",0.01,1};
 		magazines[]={"VNgroza1s_Mag_xj400"};
 		
@@ -1648,8 +1744,8 @@
 		
 		modelOptics = "\TZK_Weapon_4_0_0\KEGak107\KEGak107_sight.p3d";
 		optics = 1;
-		opticsZoomMin = 0.28;
-		opticsZoomMax = 0.28;
+		opticsZoomMin = 0.01;
+		opticsZoomMax = 0.1;
 		drysound[] = {"weapons\AK74Dry",1,1};
 		magazines[]={"KEGAK107_Mag_xj400"};
 		

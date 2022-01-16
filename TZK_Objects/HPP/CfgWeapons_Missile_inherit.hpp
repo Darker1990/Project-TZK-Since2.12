@@ -2,7 +2,6 @@
 	// Original OFP Aircrafts' Missile Launcher
 	class HellfireLauncherCobra_xj400: HellfireLauncherCobra {
 		ammo = HellfireCobra_xj400;
-		aiDispersionCoefX = 12; aiDispersionCoefY = 12;
 	};
 	class HellfireLauncherApach_xj400: HellfireLauncher {
 		ammo = HellfireApach_xj400;
@@ -10,11 +9,9 @@
 		displayNameMagazine = $STR_MN_AH64Ammo;
 		shortNameMagazine = $STR_SN_AH64Ammo;
 		count = 8;
-		aiDispersionCoefX = 12; aiDispersionCoefY = 12;
 	};
 	class HellfireLauncherHind_xj400: HellfireLauncherHind {
 		ammo = "AT6_xj400";
-		aiDispersionCoefX = 12; aiDispersionCoefY = 12;
 	};
 	class HellfireLauncherKamov_xj400: HellfireLauncherHind {
 		ammo="AT6_xj400";
@@ -23,7 +20,6 @@
 		shortNameMagazine="$STR_SN_AT6";
 		count = 12
 		initSpeed = 30;
-		aiDispersionCoefX = 12; aiDispersionCoefY = 12;
 	};
 	class AT6a_RHS_xj400: HellfireLauncherHind_xj400 {
 		ammo = "AT6a_RHS_xj400";
@@ -51,7 +47,7 @@
 		displayName=$STR_DN_CH29T;
 		displayNameMagazine=$STR_MN_CH29T;
 		shortNameMagazine=$STR_SN_CH29T;
-		count = 6;
+		count = 12;
 	};
 
 	// Vehicle's AA Launcher
@@ -65,7 +61,7 @@
 		magazineReloadTime = 5;
 		aiRateOfFire = 3.0;
 		aiRateOfFireDistance = 2000;
-		maxLeadSpeed = 600;
+		maxLeadSpeed = 300;
 		sound[]={Weapons\missile,db10,1};
 		aiDispersionCoefX = 16; aiDispersionCoefY = 16;
 	};
@@ -92,7 +88,7 @@
 		
 		displayNameMagazine = "RedTop";
 		shortNameMagazine = "RedTop";
-		count = 4;
+		count = 12;
 		initspeed = 30;
 		
 		ammo = "RedTop_26_xj400";
@@ -157,7 +153,7 @@
 
 	class HellfireLauncherBMP2_xj400: AT3Launcher {
 		count = 8;
-		reloadTime = 30;
+		reloadTime = 15;
 		displayName = $STR_DN_ADD_BMP2_AT;
 		displayNameMagazine = $STR_DN_ADD_BMP2_AT;
 		shortNameMagazine = $STR_DN_ADD_BMP2_AT;
@@ -174,6 +170,11 @@
 	// Vehicle's AT Launcher
 	class GuidedAT_APC_xj400: AT3Launcher {
 		count = 2;
+		hit = 800;
+		indirectHit = 350;
+		midRange = 1000;
+		maxRange = 2000;
+		maxControlRange = 1000;
 		ammo = GuidedAT_APC_xj400;
 		displayName="AT";
 		displayNameMagazine="AT";

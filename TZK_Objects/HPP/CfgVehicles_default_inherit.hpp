@@ -52,6 +52,7 @@
 	class OfficerE: SoldierEB {};
 	class SoldierEMiner: SoldierEB {};
 	class HeavyGrenadier: SoldierEB {};
+	class GeneralE: SoldierEB {};
 	
 	class SoldierGB: Soldier {};
 	class SoldierGG: SoldierGB {};

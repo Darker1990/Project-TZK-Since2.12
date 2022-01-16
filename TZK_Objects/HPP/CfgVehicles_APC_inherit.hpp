@@ -2,6 +2,7 @@
 
 	class M113_xj400: M113 {
 		scope = protected; vehicleClass = "TZK_Units_400";
+		armor = 400;
 		class UserActions {
 			class TransportTurnON : UA_TransportTurnON {}; class TransportTurnOFF : UA_TransportTurnOFF {};
 			class EjectOneCargo : UA_EjectOneCargo {}; class EjectAllCargo : UA_EjectAllCargo {};
@@ -14,6 +15,8 @@
 			,  tzk_tex_99
 		};
 		class EventHandlers {Init = "_vehicle = _this select 0; [_vehicle, {C}] exec {\TZK_Objects\Scripts\texture\M113.sqs}";};
+		gunnerCanSee = "4+8+16 +1";
+		driverCanSee = "2+8+16 +1"; // Extend Radar-can-see in TZK for gunner/driver seat.				
 	};
 /*	class M113_AA_xj400: M113_xj400 {
 		// the ability of this unit should keep pace with Vulcan
@@ -63,6 +66,7 @@
 	};	*/
 	class BMP_xj400: BMP {
 		scope = protected; vehicleClass = "TZK_Units_400";
+		armor = 400;
 		class UserActions {
 			class TransportTurnON : UA_TransportTurnON {}; class TransportTurnOFF : UA_TransportTurnOFF {};
 			class EjectOneCargo : UA_EjectOneCargo {}; class EjectAllCargo : UA_EjectAllCargo {};
@@ -73,10 +77,13 @@
 			,  tzk_tex_99
 		};
 		class EventHandlers {Init = "_vehicle = _this select 0; [_vehicle, {C}] exec {\TZK_Objects\Scripts\texture\BMP1.sqs}";};
+		gunnerCanSee = "4+8+16 +1";
+		driverCanSee = "2+8+16 +1"; // Extend Radar-can-see in TZK for gunner/driver seat.
 	};
 
 	class M113Ambul_xj400: M113Ambul {
 		scope = protected; vehicleClass = "TZK_Units_400";
+		armor = 400;
 		class TransportMagazines {};
 		attendant = 0;
 		class UserActions {
@@ -92,6 +99,8 @@
 			,  tzk_tex_99
 		};
 		class EventHandlers {Init = "_vehicle = _this select 0; [_vehicle, {C}] exec {\TZK_Objects\Scripts\texture\M113Ambu.sqs}";};
+		gunnerCanSee = "4+8+16 +1";
+		driverCanSee = "2+8+16 +1"; // Extend Radar-can-see in TZK for gunner/driver seat.
 	};
 	class MHQW_xj400: M113Ambul_xj400 {
 		scope = protected;
@@ -156,6 +165,7 @@
 
 	class BMPAmbul_xj400: BMPAmbul {
 		scope = protected; vehicleClass = "TZK_Units_400";
+		armor = 400;
 		class TransportMagazines {};
 		attendant = 0;
 		class UserActions {
@@ -169,6 +179,8 @@
 			,  tzk_tex_99
 		};
 		class EventHandlers {Init = "_vehicle = _this select 0; [_vehicle, {C}] exec {\TZK_Objects\Scripts\texture\BMPAmbu.sqs}";};
+		gunnerCanSee = "4+8+16 +1";
+		driverCanSee = "2+8+16 +1"; // Extend Radar-can-see in TZK for gunner/driver seat.
 	};
 	class MHQE_xj400: BMPAmbul_xj400 {
 		scope = protected;
@@ -237,8 +249,8 @@
 				
 		picture = "\vulcan\ivulcan.paa";
 		icon = "antiAC.paa";
-		armor = 180;
-		irScanRange = 4000; irScanGround = 0; gunnerCanSee = "4+8+16 +1";
+		armor = 400;
+		irScanRange = 4000; irScanGround = 0; 
 		weapons[] = {"VulcanCannon"};
 		magazines[] = {"VulcanCannon"};
 		class Turret {
@@ -282,11 +294,13 @@
 			,  tzk_tex_99
 		};
 		class EventHandlers {Init = "_vehicle = _this select 0; [_vehicle, {C}] exec {\TZK_Objects\Scripts\texture\Vulcan.sqs}";};
+		gunnerCanSee = "4+8+16 +1";
+		driverCanSee = "2+8+16 +1"; // Extend Radar-can-see in TZK for gunner/driver seat.
 	};
 	class Vulcan_TZK_xj400: Vulcan_xj400 {
 		scope = protected; vehicleClass = "TZK_Units_400";
 		weapons[] = {"RedTop_26_xj400", "VulcanCannon_xj400"};
-		magazines[] = {"RedTop_26_xj400", "VulcanCannon_xj400"};
+		magazines[] = {"RedTop_26_xj400", "VulcanCannon_xj400", "VulcanCannon_xj400", "VulcanCannon_xj400"};
 		transportSoldier = 8;
 		class ReloadAnimations {
 			class VulcanCannon {
@@ -307,14 +321,14 @@
 		// Default M2A2 without CTI setting. Using TZK model to fix its ComTurret and zamerny
 		scope = protected; vehicleClass = "TZK_Units_400";
 		displayName = "Bradley IFV"; nameSound = "apc"; side = 1; threat[] = {0.5,0.5,1};
-		
+		irScanRangeMin = 500; irScanRangeMax = 4000; irScanToEyeFactor = 2; irScanGround = 1;
 		model = "\TZK_Model_4_0_0\M2A2.p3d";
 		picture = "\m2a2\im2a2.paa";
 		canFloat = 0;
-		armor = 200;
+		armor = 450;
 		
 		weapons[] = {Cannon25HE_xj400,MachineGun7_6_xj400,HellfireLauncherM2A2_xj400};
-		magazines[] = {Cannon25HE_xj400,MachineGun7_6_xj400,HellfireLauncherM2A2_xj400,HellfireLauncherM2A2_xj400,HellfireLauncherM2A2_xj400,HellfireLauncherM2A2_xj400};
+		magazines[] = {Cannon25HE_xj400,Cannon25HE_xj400,MachineGun7_6_xj400,HellfireLauncherM2A2_xj400,HellfireLauncherM2A2_xj400,HellfireLauncherM2A2_xj400,HellfireLauncherM2A2_xj400};
 		
 		gunnerOpticsModel = "optika_tank_gunner";
 		gunnerAction = "ManActM2A2GunnerOut";
@@ -327,6 +341,8 @@
 		hasCommander = 1; commanderUsesPilotView = 1;
 		outGunnerMayFire = 0; forceHideGunner = 0; viewGunnerInExternal = 0;
 		transportSoldier = 6;
+		gunnerCanSee = "4+8+16 +1";
+		driverCanSee = "2+8+16 +1"; // Extend Radar-can-see in TZK for gunner/driver seat.
 		class GunClouds: WeaponCloudsMGun {};
 		class Turret {
 			gunAxis = "OsaHlavne";
@@ -365,8 +381,6 @@
 	class M2A2_xj400: Bradley_xj400 {
 		// CTI unit with special adjustment.
 		displayName = "M2A2";
-		irScanRangeMin = 500; irScanRangeMax = 4000; irScanToEyeFactor = 2; irScanGround = 0;
-		gunnerCanSee = "1+4+8+16";
 		cost = 200000;
 	//	armor = 350;
 		class UserActions {
@@ -386,22 +400,23 @@
 		scope = protected;
 		displayName = "M2A2 AT";
 		cost = 2000000;
-		weapons[] = {ATLauncherTank_xj400, 50calW_xj400};
+		weapons[] = {Cannon25HE_xj400,ATLauncherTank_xj400, 50calW_xj400};
 		magazines[]= {GuidedAT_APC_xj400, GuidedAT_APC_xj400, GuidedAT_APC_xj400, GuidedAT_APC_xj400, GuidedAT_APC_xj400, GuidedAT_APC_xj400, GuidedAT_APC_xj400,
-		50calW_xj400, 50calW_xj400,50calW_xj400,50calW_xj400,50calW_xj400,50calW_xj400,50calW_xj400,50calW_xj400,50calW_xj400,50calW_xj400};
+		Cannon25HE_xj400,Cannon25HE_xj400,50calW_xj400, 50calW_xj400,50calW_xj400,50calW_xj400,50calW_xj400,50calW_xj400,50calW_xj400,50calW_xj400,50calW_xj400,50calW_xj400};
 		threat[] = {1, 1, 0.5};
 	};
 	class M2A2_AA_xj400: M2A2_xj400 {
 		displayName = "M2A2 AA";
-		weapons[] = {Stinger_xj400, MachineGun7_6_xj400};
-		magazines[] = {Stinger_xj400, Stinger_xj400, Stinger_xj400, Stinger_xj400, Stinger_xj400, Stinger_xj400, Stinger_xj400, Stinger_xj400, MachineGun7_6_xj400};
+		irScanGround = 0;
+		weapons[] = {Cannon25HE_xj400,Stinger_xj400, MachineGun7_6_xj400};
+		magazines[] = {Cannon25HE_xj400,Cannon25HE_xj400,Stinger_xj400, Stinger_xj400, Stinger_xj400, Stinger_xj400, Stinger_xj400, Stinger_xj400, Stinger_xj400, Stinger_xj400, MachineGun7_6_xj400};
 		threat[] = {1, 0.9, 1};
 		minFireTime = 1;
 	};
 	class M2A2_AA_Town_xj400: M2A2_AA_xj400 {
 		scope = protected; vehicleClass = "TZK_Units_400";
-		irScanToEyeFactor = 1.5;
-		sensitivity = 2; sensitivityEar = 0.015;
+		irScanToEyeFactor = 1.0;
+		sensitivity = 1.5; sensitivityEar = 0.015;
 	};
 
 
@@ -409,9 +424,9 @@
 		// Unnecessary to define a basic BMP2, for its model isn't a bug.
 		scope = private; vehicleClass = "TZK_Units_400";
 		displayName = "$STR_DN_BMP2"; threat[] = {0.5,0.5,1};
-		
+		irScanRangeMin = 500; irScanRangeMax = 4000; irScanToEyeFactor = 2; irScanGround = 1;
 		model = "\bmp2\bmp2";
-		armor = 250;
+		armor = 450;
 		weapons[] = {Cannon30_BMP2_xj400,MachineGun7_6_xj400,HellfireLauncherBMP2_xj400};
 		magazines[] = {Cannon30HE_BMP2_xj400,Cannon30AP_BMP2_xj400,MachineGun7_6_xj400,HellfireLauncherBMP2_xj400};
 		class GunClouds: WeaponCloudsMGun {};
@@ -436,13 +451,13 @@
 			max = 35;
 		};
 		transportSoldier = 6;
+		gunnerCanSee = "4+8+16 +1";
+		driverCanSee = "2+8+16 +1"; // Extend Radar-can-see in TZK for gunner/driver seat.
 	};
 	class BMP2_xj400: BMP2_Base_xj400 {
 		// CTI unit with special adjustment.
 		scope = protected;
-		irScanRangeMin = 500; irScanRangeMax = 4000; irScanToEyeFactor = 2; irScanGround = 0;
-		gunnerCanSee = "1+4+8+16";
-	//	armor = 330;
+		//	armor = 330;
 		displayName = "BMP2";
 		class UserActions {
 			class TransportTurnON : UA_TransportTurnON {}; class TransportTurnOFF : UA_TransportTurnOFF {};
@@ -458,22 +473,23 @@
 	class BMP2_AT_xj400: BMP2_xj400 {
 		displayName = "BMP2 AT";
 		cost = 2000000;
-		weapons[] = {ATLauncherTank_xj400, 50calE_xj400};
+		weapons[] = {Cannon30_BMP2_xj400,ATLauncherTank_xj400, 50calE_xj400};
 		magazines[]= {GuidedAT_APC_xj400, GuidedAT_APC_xj400, GuidedAT_APC_xj400, GuidedAT_APC_xj400, GuidedAT_APC_xj400, GuidedAT_APC_xj400, GuidedAT_APC_xj400,
-		50calE_xj400, 50calE_xj400,50calE_xj400,50calE_xj400,50calE_xj400,50calE_xj400,50calE_xj400,50calE_xj400,50calE_xj400,50calE_xj400};
+		Cannon30HE_BMP2_xj400,Cannon30AP_BMP2_xj400,50calE_xj400,50calE_xj400,50calE_xj400,50calE_xj400,50calE_xj400,50calE_xj400,50calE_xj400,50calE_xj400,50calE_xj400,50calE_xj400};
 		threat[] = {1, 1, 0.5};
 	};
 	class BMP2_AA_xj400: BMP2_xj400 {
 		displayName = "BMP2 AA";
-		weapons[] = {Strela_xj400, MachineGun7_6_xj400};
-		magazines[] = {Strela_xj400, Strela_xj400, Strela_xj400, Strela_xj400, Strela_xj400, Strela_xj400, Strela_xj400, Strela_xj400, MachineGun7_6_xj400};
+		irScanGround = 0;
+		weapons[] = {Cannon30_BMP2_xj400,Strela_xj400, MachineGun7_6_xj400};
+		magazines[] = {Cannon30HE_BMP2_xj400,Cannon30AP_BMP2_xj400,Strela_xj400, Strela_xj400, Strela_xj400, Strela_xj400, Strela_xj400, Strela_xj400, Strela_xj400, Strela_xj400, MachineGun7_6_xj400};
 		threat[] = {1, 0.9, 1};
 		minFireTime = 1;
 	};
 	class BMP2_AA_Town_xj400: BMP2_AA_xj400 {
 		scope = protected;
-		irScanToEyeFactor = 1.5;
-		sensitivity = 2; sensitivityEar = 0.015;
+		irScanToEyeFactor = 1.0;
+		sensitivity = 1.5; sensitivityEar = 0.015;
 	};
 
 

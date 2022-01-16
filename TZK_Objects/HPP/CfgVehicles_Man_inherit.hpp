@@ -1,132 +1,224 @@
 // Man using new animations.
 	class SoldierWB_xj400: SoldierWB {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierWG_xj400: SoldierWG {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class HeavyGW_xj400: HeavyGW {
 		moves = "CfgMovesMC_xj400";
+		weapons[]={"MM1_xj400","Binocular","Throw","Put"};
+		magazines[]={"MM1Magazine_xj400","MM1Magazine_xj400","MM1Magazine_xj400","MM1Magazine_xj400"};
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierWMG_xj400: SoldierWMG {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierWSniper_xj400: SoldierWSniper {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierWMortar_xj400: SoldierWMortar {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierWLAW_xj400: SoldierWLAW {
 		moves = "CfgMovesMC_xj400";
+		weapons[]={"M16","LAWLauncher_xj400","Throw","Put"};
+		magazines[]={"M16","M16","M16","M16","LAWLauncher_xj400","LAWLauncher_xj400","LAWLauncher_xj400"};
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierWAT_xj400: SoldierWAT {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierWAA_xj400: SoldierWAA {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierWSaboteurDay_xj400: SoldierWSaboteurDay {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierWMiner_xj400: SoldierWMiner {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
 	};
 	class SoldierWMedic_xj400: SoldierWMedic {
 		moves = "CfgMovesMC_xj400";
+		canDeactivateMines=1;
 	};
 	class SoldierWCrew_xj400: SoldierWCrew {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierWPilot_xj400: SoldierWPilot {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class OfficerW_xj400: OfficerW {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 
 	class SoldierEB_xj400: SoldierEB {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierEG_xj400: SoldierEG {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class HeavyGrenadier_xj400: HeavyGrenadier {
 		moves = "CfgMovesMC_xj400";
+		weapons[]={"6G30_xj400","Binocular","Throw","Put"};
+		magazines[]={"6G30Magazine_xj400","6G30Magazine_xj400","6G30Magazine_xj400","6G30Magazine_xj400"};
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierEMG_xj400: SoldierEMG {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierESniper_xj400: SoldierESniper {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierELAW_xj400: SoldierELAW {
 		moves = "CfgMovesMC_xj400";
+		weapons[]={"AK74","RPGLauncher_xj400","Throw","Put"};
+		magazines[]={"AK74","AK74","AK74","AK74","RPGLauncher_xj400","RPGLauncher_xj400","RPGLauncher_xj400"};
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierEAT_xj400: SoldierEAT {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierEAA_xj400: SoldierEAA {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierESaboteurBizon_xj400: SoldierESaboteurBizon {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierEMiner_xj400: SoldierEMiner {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
 	};
 	class SoldierEMedic_xj400: SoldierEMedic {
 		moves = "CfgMovesMC_xj400";
+		canDeactivateMines=1;
 	};
 	class SoldierECrew_xj400: SoldierECrew {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierEPilot_xj400: SoldierEPilot {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class OfficerE_xj400: OfficerE {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
-	
+	class GeneralE_xj400: GeneralE {
+		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
+	};
+		
 	class SoldierGB_xj400: SoldierGB {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierGG_xj400: SoldierGG {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierGMG_xj400: SoldierGMG {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierGSniper_xj400: SoldierGSniper {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierGLAW_xj400: SoldierGLAW {
 		moves = "CfgMovesMC_xj400";
+		weapons[]={"AK47CZ","RPGLauncher_xj400","Throw","Put"};
+		magazines[]={"AK47","AK47","AK47","AK47","RPGLauncher_xj400","RPGLauncher_xj400","RPGLauncher_xj400"};
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierGAT_xj400: SoldierGAT {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierGAA_xj400: SoldierGAA {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierGMedic_xj400: SoldierGMedic {
 		moves = "CfgMovesMC_xj400";
+		canDeactivateMines=1;
 	};
 	class SoldierGCrew_xj400: SoldierGCrew {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class SoldierGPilot_xj400: SoldierGPilot {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
 	class OfficerG_xj400: OfficerG {
 		moves = "CfgMovesMC_xj400";
+		attendant=1;
+		canDeactivateMines=1;
 	};
+	
 	
 // Player
 	class LeaderW_xj400: SoldierWB_xj400 {
 		scope = protected;
 		canHideBodies = 1;
 		canDeactivateMines = 1;
+		attendant=1;
 		class UserActions {
 			class MHQBuildMenu : UA_MHQBuildMenu {
 				statement="[utMHQ0,150] exec {Player\Dialog\BuildMenu.sqs}";
@@ -141,10 +233,9 @@
 			class SelfMedic: UA_SelfMedic {};
 		};
 	};
-	class LeaderE_xj400: SoldierEB_xj400 {
+	class LeaderE_xj400: OfficerE_xj400 {
 		scope = protected;
 		canHideBodies = 1;
-		canDeactivateMines = 1;
 		class UserActions {
 			class MHQBuildMenu : UA_MHQBuildMenu {
 				statement="[utMHQ1,150] exec {Player\Dialog\BuildMenu.sqs}";
@@ -162,7 +253,6 @@
 	class CommanderW_xj400: OfficerW_xj400 {
 		scope = protected;
 		canHideBodies = 1;
-		canDeactivateMines = 1;
 		class UserActions {
 			class MHQBuildMenu : UA_MHQBuildMenu {
 				statement="[utMHQ0,150] exec {Player\Dialog\BuildMenu.sqs}";
@@ -177,10 +267,11 @@
 			class SelfMedic: UA_SelfMedic {};
 		};
 	};
-	class CommanderE_xj400: OfficerE_xj400 {
+	class CommanderE_xj400: GeneralE_xj400 {
 		scope = protected;
 		canHideBodies = 1;
-		canDeactivateMines = 1;
+		weapons[]={"AK74","HyperLauncher_xj400","Throw","Put"};
+		magazines[]={"AK74","AK74","AK74","AK74","CarlGustavIn4_xj400","CarlGustavIn4_xj400"};		
 		class UserActions {
 			class MHQBuildMenu : UA_MHQBuildMenu {
 				statement="[utMHQ1,150] exec {Player\Dialog\BuildMenu.sqs}";

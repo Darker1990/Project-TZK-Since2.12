@@ -425,9 +425,52 @@
 		visibleFireTime = 2;
 	};
 	
-	
-	
-	
+	//Custom AT4 with higher range
+		class AT4_xj400:AT4
+		{
+		hit=850;
+		indirectHit=400;
+		midRange=1500;
+		midRangeProbab=0.95;
+		maxRange=1800;
+		maxRangeProbab=0.5;
+		maxControlRange=1000;
+		};	
+		
+	//Custom CarlGustav with higher range
+		class CarlGustav_xj400:CarlGustav
+		{
+		hit=850;
+		indirectHit=400;	
+		midRange=1500;
+		midRangeProbab=0.95;
+		maxRange=1800;
+		maxRangeProbab=0.5;
+		maxControlRange=1000;
+		};	
+		
+	//Custom LAW and RPG with higher hit
+		
+		class LAWGrenade_xj400:LAW
+		{
+		hit=700;
+		indirectHit=300;
+		indirectHitRange=2.5;
+		minRange=20;
+		minRangeProbab=0.5;
+		midRange=250;
+		midRangeProbab=0.95;
+		maxRange=500;
+		maxRangeProbab=0.5;
+		maxSpeed=350;
+		thrust=2500;
+		};
+
+	class RPGGrenade_xj400:LAWGrenade_xj400
+		{
+		model="RPG";
+		};		
+			
 	// SUCH SMAW and RPG16
 	class SMAW_Ammo_xj400: LAW { 
 		model="\TZK_Weapon_4_0_0\SUCH\SUCHsmawHEAA.p3d";

@@ -7,8 +7,8 @@
 		minRangeProbab = 0.8;
 		midRange = 500;
 		midRangeProbab = 0.95;
-		maxRange = 3000;
-		maxRangeProbab = 0.05;
+		maxRange = 1500;
+		maxRangeProbab = 0.3;
 		cost = 30;
 		tracerColor[] = {0.2,0.8,0.1,0.25};
 		tracerColorR[] = {0.2,0.8,0.1,0.25};
@@ -35,8 +35,8 @@
 		cost = 45;
 	};
 	class Cannon25HE_xj400: ExplosiveBullet {
-		hit = 30
-		indirectHit = 15
+		hit = 80
+		indirectHit = 40
 		indirectHitRange = 3
 		minRange = 20
 		minRangeProbab = 0.80;
@@ -48,8 +48,8 @@
 		soundHit[] = {"\m2a2\double_expl.wss",31.6228,1};
 	};
 	class Cannon30HE_BMP2_xj400: ExplosiveBullet {
-		hit = 20
-		indirectHit = 15
+		hit = 80
+		indirectHit = 40
 		indirectHitRange = 3
 		minRange = 20
 		minRangeProbab = 0.80;
@@ -61,8 +61,8 @@
 		cost = 40;
 	};
 	class Cannon30AP_BMP2_xj400: BulletSingle {
-		hit = 70
-		indirectHit = 5
+		hit = 80
+		indirectHit = 40
 		indirectHitRange = 1
 		minRange = 20
 		minRangeProbab = 0.80;
@@ -75,8 +75,8 @@
 	};
 
 	class Cannon30HE_Kamov_xj400: ExplosiveBullet {
-		hit = 20
-		indirectHit = 10
+		hit = 100
+		indirectHit = 50
 		indirectHitRange = 3
 		minRange = 20
 		minRangeProbab = 0.80;
@@ -88,8 +88,8 @@
 		cost = 40
 	};
 	class Cannon30AP_Kamov_xj400: BulletSingle {
-		hit = 90
-		indirectHit = 5
+		hit = 100
+		indirectHit = 50
 		indirectHitRange = 1
 		minRange = 20
 		minRangeProbab = 0.80;
@@ -102,7 +102,7 @@
 	};
 
 	class Cannon_Heli_xj400: Bullet4x20 {
-		hit = 30; indirectHit = 15; indirectHitRange = 2;
+		hit = 100; indirectHit = 50; indirectHitRange = 2;
 		minRange = 20; minRangeProbab = 0.80;
 		midRange = 500;midRangeProbab = 0.95;
 		maxRange = 3000; maxRangeProbab = 0.05;
@@ -117,7 +117,7 @@
 
 	class Cannon_20HE_xj400: Cannon30HE_Kamov_xj400 {
 		//Being defined in CR09
-		hit = 20; indirectHit = 10; indirectHitRange = 3
+		hit = 100; indirectHit = 50; indirectHitRange = 3
 		cost = 10;
 		airLock = true;
 		minRange = 20; minRangeProbab = 0.80;
@@ -125,7 +125,7 @@
 		maxRange = 3000; maxRangeProbab = 0.05;
 	};
 	class Cannon_20AP_xj400: Cannon30AP_Kamov_xj400 {
-		hit = 60; indirectHit = 6; indirectHitRange = 0.5;
+		hit = 100; indirectHit = 50; indirectHitRange = 0.5;
 		cost = 200;
 		airLock = false;
 		minRange = 20; minRangeProbab = 0.80;
@@ -144,7 +144,7 @@
 		soundHitBuilding2[] = {weapons\bulletricochet5,db-10,1};
 	};
 	class Cannon_30APHE_xj400: Cannon_20HE_xj400 {
-		hit = 200; indirectHit = 20; indirectHitRange = 2;
+		hit = 100; indirectHit = 50; indirectHitRange = 2;
 	};
 
 	class BMKHE20_DVD_xj400: ExplosiveBullet {
