@@ -1,0 +1,7 @@
+///<'TZK_Objects.pbo' properties via Mikero's dos tools, dll version 6.44>///
+prefix=SteamLibrary\steamapps\common\ARMA Cold War Assault\@TZK_4.0.3\AddOns\TZK_Objects
+Mikero=DePbo.dll.7.46
+version=Fri Sep 18 19:00:30 2020
+//Pbo Type is: Arma Addon
+//Sha: '3CB0E4C3EC8981E4CC2DBA13CC0EB7113EE04931'
+//////</properties>//////
