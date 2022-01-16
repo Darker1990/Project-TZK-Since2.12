@@ -1,5 +1,0 @@
-_plane = _this select 0;
-
-_plane animate ["Slope", 1]
-
-exit
