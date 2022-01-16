@@ -3,7 +3,7 @@
 _v = _this select 0; _t = _this select 1
 
 rand = (random 2) - 0.5
-_m = [["M21", "M21", "M21", "M21", "CarlGustavLauncher"], ["SVDDragunov", "SVDDragunov", "SVDDragunov", "SVDDragunov", "AT4Launcher"]] select rand
-_w = [["M21", "CarlGustavLauncher"], ["SVDDragunov", "AT4Launcher"]] select rand
+_m = [["M21", "M21", "M21", "M21", "CarlGustavIn4_xj400", "CarlGustavIn4_xj400"], ["SVDDragunov", "SVDDragunov", "SVDDragunov", "SVDDragunov", "AT4In4_xj400", "AT4In4_xj400"]] select rand
+_w = [["M21", "HyperLauncher_xj400"], ["SVDDragunov", "HyperLauncher_xj400"]] select rand
 
 [_v, _t, _m, _w] exec "\TZK_Scripts_4_0_4\Common\Equip\GeneralSoldier.sqs"

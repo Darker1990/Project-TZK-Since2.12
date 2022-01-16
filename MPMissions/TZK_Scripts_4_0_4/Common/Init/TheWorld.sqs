@@ -12,7 +12,7 @@ _i = 0; _c = count _array
 while "_i < _c && !_found" do {if (_world == _array select _i) then {_found = true}; _i = _i + 1}
 ? _found: TheWorld = "G"; goto "SecondaryInitialization"
 
-_array = ["Kolguev2", "USSR2", "USMC_Gaia",  "kodiak_winter", "Noe_winter", "doeeden_snow", "KEGnoecain_snow", "Cain_Winter", "kodiak_winter_tzk"]
+_array = ["Kolguev2", "USSR2", "USMC_Gaia",  "kodiak_winter", "Noe_winter", "doeeden_snow", "KEGnoecain_snow", "Cain_Winter", "FDF_maldevic_w", "kodiak_winter_tzk"]
 _i = 0; _c = count _array
 while "_i < _c && !_found" do {if (_world == _array select _i) then {_found = true}; _i = _i + 1}
 ? _found: TheWorld = "W"; goto "SecondaryInitialization"

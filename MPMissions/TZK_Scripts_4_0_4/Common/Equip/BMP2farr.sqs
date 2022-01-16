@@ -2,7 +2,7 @@
 
 _v = _this select 0; _t = _this select 1
 
-_m = ["Rocket57x14_xj400", "Rocket57x14_xj400", "Rocket57x14_xj400", "Rocket57x14_xj400", "Rocket57x14_xj400"]
-_w = ["Rocket57x14_xj400"]
+_m = ["Cannon30HE_BMP2_xj400", "Cannon30AP_BMP2_xj400", "MachineGun7_6_xj400", "Rocket57x14_xj400", "Rocket57x14_xj400", "Rocket57x14_xj400", "Rocket57x14_xj400", "Rocket57x14_xj400", "Rocket57x14_xj400"]
+_w = ["Cannon30_BMP2_xj400", "Rocket57x14_xj400", "MachineGun7_6_xj400"]
 
 [_v, _t, _m, _w] exec "\TZK_Scripts_4_0_4\Common\Equip\GeneralVehicle.sqs"

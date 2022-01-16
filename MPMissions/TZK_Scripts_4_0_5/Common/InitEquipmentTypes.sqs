@@ -3,7 +3,7 @@
 ; addon specific equipment used in scripts
 _nvg0 = "NVG_stat_xj400"; _nvg1 = "NVG_statF_xj400"; _wSG551 = "SG551_xj400"; _mSG551 = "SG551_Mag_xj400"
 _wMP5SD6 = "EUDEF_MP5SD6_xj400"; _mMP5SD6 = "EUDEF_MP5SD6_MAG_xj400"; _wGroza = "VNgroza1sscope_xj400"; _mGroza = "VNgroza1s_Mag_xj400"
-_medkit = "Medkit_xj400"; _hyperL = "HyperLauncher_xj400"; _carl4slot = "CarlGustavIn4_xj400"; _aa4slot = "AAIn4_xj400"; _at44slot = "AT4In4_xj400"; _9k324slot = "9k32In4_xj400"
+_medkit = "Medkit_xj400"; _hyperL = "HyperLauncher_xj400"; _carl4slot = "CarlGustavIn4_xj400"; _aa4slot = "AAIn4_xj400"; _at44slot = "AT4In4_xj400"; _9k324slot = "9k32In4_xj400"; _RPG = "RPGLauncher_xj400"; _LAW = "LAWLauncher_xj400";
 _wVAL = "VALPSO_xj400"; _mVAL = "VAL_Mag_xj400"; 
 _wM249SD = "M249SPW_ACOG_SD_xj400"; _mM249SD = "M249SPW_SD_Mag_xj400"; _wRPK74SD = "RPK74M_1P29_SD_xj400"; _mRPK74SD = "RPK74_SD_Mag_xj400"
 w_TZK_SniperE = "RFSVUa_xj400"; m_TZK_SniperE = "RFSVUA_Mag_xj400"; w_TZK_AK107 = "KEGAK107_xj400"; m_TZK_AK107 = "KEGAK107_Mag_xj400"
@@ -16,35 +16,35 @@ magTimeBomb = "TimeBomb"
 weaponPut = "Put_xj400"
 weaponsCustom = [weaponPut]
 
-; ? bool_TZK_Vanilla_Mode: _medkit = "", magPistolMine = "", _hyperL = "CarlGustavLauncher", _carl4slot = "CarlGustav", _at44slot = _carl4slot, _aa4slot = "", _9k324slot = ""
+; ? bool_TZK_Vanilla_Mode: _medkit = "", magPistolMine = "", _hyperL = "CarlGustavLauncher", _RPG = "RPGLauncher", _LAW = "LAWLauncher", _carl4slot = "CarlGustav", _at44slot = _carl4slot, _aa4slot = "", _9k324slot = ""
 ? bool_TZK_199_Mode: _nvg0 = "NVGoggles", _nvg1 = _nvg0
 ? bool_TZK_Vanilla_Mode: {call (_x+{="AK74"})} forEach ["w_TZK_AK107", "m_TZK_AK107"], _wGroza = "Bizon", _mGroza = "BizonMag", {call (_x+{="SVDDragunov"})} forEach ["_wVAL", "_mVAL", "_wRPK74SD", "_mRPK74SD", "w_TZK_SniperE", "m_TZK_SniperE"], {call (_x+{="M21"})} forEach ["_wSG551", "_mSG551", "_wM249SD", "_mM249SD"], {call (_x+{="HK"})} forEach ["_wMP5SD6", "_mMP5SD6"]
 
-cargoCarSide0 = [[magMine,2], [magSatchel,4], ["LAWLauncher",3], ["CarlGustavLauncher",2], ["AALauncher",1]]
-cargoCarSide1 = [[magMine,2], [magSatchel,4], ["RPGLauncher",3], ["AT4Launcher",2], ["9K32Launcher",1]]
-cargoCar2Side0 = [[magMine,4], [magSatchel,4], ["LAWLauncher",6], ["CarlGustavLauncher",4], ["AALauncher",3]]
-cargoCar2Side1 = [[magMine,4], [magSatchel,4], ["RPGLauncher",6], ["AT4Launcher",4], ["9K32Launcher",3]]
-cargoTruckSide0 = [[magMine,4], [magSatchel,8], ["LAWLauncher",6], ["CarlGustavLauncher",5], ["AALauncher",3]]
-cargoTruckSide1 = [[magMine,4], [magSatchel,8], ["RPGLauncher",6], ["AT4Launcher",5], ["9K32Launcher",3]]
+cargoCarSide0 = [[magMine,2], [magSatchel,4], ["LAWLauncher",9], ["CarlGustavLauncher",9], ["AALauncher",9]]
+cargoCarSide1 = [[magMine,2], [magSatchel,4], ["RPGLauncher",9], ["AT4Launcher",9], ["9K32Launcher",9]]
+cargoCar2Side0 = [[magMine,4], [magSatchel,4], ["LAWLauncher",9], ["CarlGustavLauncher",9], ["AALauncher",9]]
+cargoCar2Side1 = [[magMine,4], [magSatchel,4], ["RPGLauncher",9], ["AT4Launcher",9], ["9K32Launcher",9]]
+cargoTruckSide0 = [[magMine,4], [magSatchel,8], ["LAWLauncher",9], ["CarlGustavLauncher",9], ["AALauncher",9]]
+cargoTruckSide1 = [[magMine,4], [magSatchel,8], ["RPGLauncher",9], ["AT4Launcher",9], ["9K32Launcher",9]]
 
 
 
-weaponsRespawnPlayer = [ ["G36a", "LAWLauncher", "Binocular", _nvg0], [w_TZK_AK107, "RPGLauncher", "Binocular", _nvg0] ]
-magsRespawnPlayer = [ ["G36aMag", "G36aMag", "G36aMag", "G36aMag", "LAWLauncher", "LAWLauncher"], [m_TZK_AK107, m_TZK_AK107, m_TZK_AK107, m_TZK_AK107, "RPGLauncher", "RPGLauncher"] ]
+weaponsRespawnPlayer = [ ["G36a", "LAWLauncher_xj400", "Binocular", _nvg0], [w_TZK_AK107, "RPGLauncher_xj400", "Binocular", _nvg0] ]
+magsRespawnPlayer = [ ["G36aMag", "G36aMag", "G36aMag", "LAWLauncher_xj400", "LAWLauncher_xj400", "LAWLauncher_xj400"], [m_TZK_AK107, m_TZK_AK107, m_TZK_AK107, "RPGLauncher_xj400", "RPGLauncher_xj400", "RPGLauncher_xj400"] ]
 
-weaponsRespawnPlayer1 = [ ["M21", "LAWLauncher", "Binocular", _nvg0], ["SVDDragunov", "RPGLauncher", "Binocular", _nvg0] ]
-magsRespawnPlayer1 = [ ["M21", "M21", "M21", "M21", "LAWLauncher", "LAWLauncher"], ["SVDDragunov", "SVDDragunov", "SVDDragunov", "SVDDragunov", "RPGLauncher", "RPGLauncher"] ]
+weaponsRespawnPlayer1 = [ ["M21", "LAWLauncher_xj400", "Binocular", _nvg0], ["SVDDragunov", "RPGLauncher_xj400", "Binocular", _nvg0] ]
+magsRespawnPlayer1 = [ ["M21", "M21", "M21", "M21", "LAWLauncher_xj400", "LAWLauncher_xj400"], ["SVDDragunov", "SVDDragunov", "SVDDragunov", "RPGLauncher_xj400", "RPGLauncher_xj400", "RPGLauncher_xj400"] ]
 
-weaponsRespawnPlayer2 = [ [_wMP5SD6, "LAWLauncher", "Binocular", _nvg0], [_wGroza, "RPGLauncher", "Binocular", _nvg0] ]
-magsRespawnPlayer2 = [ [_mMP5SD6, _mMP5SD6, _mMP5SD6, _mMP5SD6, "LAWLauncher", "LAWLauncher"], [_mGroza, _mGroza, _mGroza, _mGroza, "RPGLauncher", "RPGLauncher"] ]
+weaponsRespawnPlayer2 = [ [_wMP5SD6, "LAWLauncher_xj400", "Binocular", _nvg0], [_wGroza, "RPGLauncher_xj400", "Binocular", _nvg0] ]
+magsRespawnPlayer2 = [ [_mMP5SD6, _mMP5SD6, _mMP5SD6, "LAWLauncher_xj400", "LAWLauncher_xj400", "LAWLauncher_xj400"], [_mGroza, _mGroza, _mGroza, "RPGLauncher_xj400", "RPGLauncher_xj400", "RPGLauncher_xj400"] ]
 
 
 
-weaponsRespawnPlayer3 = [ [_wSG551, _hyperL, "Binocular", _nvg1], [_wVAL, _hyperL, "Binocular", _nvg1] ]
-magsRespawnPlayer3 = [ [_mSG551, _mSG551, _carl4slot, _aa4slot, magPistolMine, _medkit], [_mVAL, _mVAL, _at44slot, _9k324slot, magPistolMine, _medkit] ]
+weaponsRespawnPlayer3 = [ [_wSG551, _hyperL, "Binocular", _nvg1], ["SVDDragunov", _hyperL, "Binocular", _nvg1] ]
+magsRespawnPlayer3 = [ [_mSG551, _mSG551, _carl4slot, _carl4slot, _medkit, _medkit], ["SVDDragunov", "SVDDragunov", "SVDDragunov", "SVDDragunov", _at44slot, _at44slot, _medkit, _medkit] ]
 
 weaponsRespawnPlayer4 = [ [_wM249SD, _hyperL, "Binocular", _nvg1], [_wRPK74SD, _hyperL, "Binocular", _nvg1] ]
-magsRespawnPlayer4 = [ [_mM249SD, _carl4slot, _aa4slot, magPistolMine, _medkit], [_mRPK74SD, _mRPK74SD, _at44slot, _9k324slot, magPistolMine, _medkit] ]
+magsRespawnPlayer4 = [ [_mM249SD, _carl4slot, _carl4slot, _medkit, _medkit], [_mRPK74SD, _mRPK74SD, _mRPK74SD, _mRPK74SD, _at44slot, _at44slot, _medkit, _medkit] ]
 
 ? bool_TZK_SEMod_Mode: weaponsRespawnPlayer4 = [ [_wSG551, "WW4_JavelinLauncher", "Binocular", _nvg1], [_wRPK74SD, "ICPRPG29", "Binocular", _nvg1] ], magsRespawnPlayer4 = [ [_mSG551, _mSG551, _mSG551, "WW4_JavelinMag", _medkit], [_mRPK74SD, _mRPK74SD, _mRPK74SD, "ICPRPG29Mag", _medkit] ]
 ; not used below
@@ -55,40 +55,40 @@ magsRespawnPlayer5 = [ ["M21", "M21", "M21", "M21", "CarlGustavLauncher"], ["SVD
 weaponsRespawnPlayer6 = [ ["G36a", "CarlGustavLauncher", "Binocular", _nvg0], [w_TZK_AK107, "AT4Launcher", "Binocular", _nvg0] ]
 magsRespawnPlayer6 = [ ["G36aMag", "G36aMag", "G36aMag", "G36aMag", "CarlGustavLauncher"], [m_TZK_AK107, m_TZK_AK107, m_TZK_AK107, m_TZK_AK107, "AT4Launcher"] ]
 
-weaponsRespawnPlayer7 = [ [_wSG551, "AALauncher", "Binocular", _nvg0], [_wVAL, "9K32Launcher", "Binocular", _nvg0] ]
-magsRespawnPlayer7 = [ [_mSG551, _mSG551, _mSG551, _mSG551, "AALauncher"], [_mVAL, _mVAL, _mVAL, _mVAL, "9K32Launcher"] ]
+weaponsRespawnPlayer7 = [ [_wSG551, "AALauncher", "Binocular", _nvg0], [w_TZK_AK107, "9K32Launcher", "Binocular", _nvg0] ]
+magsRespawnPlayer7 = [ [_mSG551, _mSG551, _mSG551, _mSG551, "AALauncher"], [m_TZK_AK107, m_TZK_AK107, m_TZK_AK107, m_TZK_AK107, "9K32Launcher"] ]
 
 weaponsRespawnPlayer8 = [ [_wSG551, "AALauncher", "Binocular", _nvg0], [w_TZK_SniperE, "9K32Launcher", "Binocular", _nvg0] ]
 magsRespawnPlayer8= [ [_mSG551, _mSG551, _mSG551, _mSG551, "AALauncher"], [m_TZK_SniperE, m_TZK_SniperE, m_TZK_SniperE, m_TZK_SniperE, "9K32Launcher"] ]
 
-weaponsRespawnPlayer9 = [ [_wSG551, "LAWLauncher", "Binocular", _nvg0], [w_TZK_SniperE, "RPGLauncher", "Binocular", _nvg0] ]
-magsRespawnPlayer9 = [ [_mSG551, _mSG551, "LAWLauncher", "LAWLauncher", "LAWLauncher", "LAWLauncher"], [m_TZK_SniperE, m_TZK_SniperE, "RPGLauncher", "RPGLauncher", "RPGLauncher","RPGLauncher"] ]
+weaponsRespawnPlayer9 = [ [_wSG551, "LAWLauncher_xj400", "Binocular", _nvg0], [w_TZK_SniperE, "RPGLauncher_xj400", "Binocular", _nvg0] ]
+magsRespawnPlayer9 = [ [_mSG551, _mSG551, _mSG551, "LAWLauncher_xj400", "LAWLauncher_xj400", "LAWLauncher_xj400"], [m_TZK_SniperE, m_TZK_SniperE, m_TZK_SniperE, "RPGLauncher_xj400", "RPGLauncher_xj400","RPGLauncher_xj400"] ]
 
 
 
 
-weaponsRespawnAI = [ ["G36a", "LAWLauncher", "Put", _nvg0], [w_TZK_AK107, "RPGLauncher","Put", _nvg0] ]
-magsRespawnAI = [ ["G36aMag", "G36aMag", "LAWLauncher", "LAWLauncher", magSatchel, magSatchel], [m_TZK_AK107, m_TZK_AK107, "RPGLauncher", "RPGLauncher", magSatchel, magSatchel] ]
+weaponsRespawnAI = [ ["G36a", "LAWLauncher_xj400", "Put", _nvg0], [w_TZK_AK107, "RPGLauncher_xj400","Put", _nvg0] ]
+magsRespawnAI = [ ["G36aMag", "G36aMag", "G36aMag", "LAWLauncher_xj400", "LAWLauncher_xj400", "LAWLauncher_xj400"], [m_TZK_AK107, m_TZK_AK107, m_TZK_AK107, "RPGLauncher_xj400", "RPGLauncher_xj400", "RPGLauncher_xj400"] ]
 
 weaponsRespawnAI1 = [ ["G36a", "AALauncher", _nvg0], [w_TZK_AK107, "9K32Launcher", _nvg0] ]
 magsRespawnAI1 = [ ["G36aMag", "G36aMag","G36aMag","G36aMag", "AALauncher"], [m_TZK_AK107, m_TZK_AK107,m_TZK_AK107,m_TZK_AK107, "9K32Launcher"] ]
 
-weaponsRespawnAI2 = [ ["M21", "LAWLauncher", _nvg0], ["SVDDragunov", "RPGLauncher", _nvg0] ]
-magsRespawnAI2 = [ ["M21", "M21", "M21", "LAWLauncher", "LAWLauncher", "LAWLauncher"], ["SVDDragunov", "SVDDragunov", "SVDDragunov", "RPGLauncher", "RPGLauncher", "RPGLauncher"] ]
+weaponsRespawnAI2 = [ ["M21", "LAWLauncher_xj400", _nvg0], ["SVDDragunov", "RPGLauncher_xj400", _nvg0] ]
+magsRespawnAI2 = [ ["M21", "M21", "M21", "LAWLauncher_xj400", "LAWLauncher_xj400", "LAWLauncher_xj400"], ["SVDDragunov", "SVDDragunov", "SVDDragunov", "RPGLauncher_xj400", "RPGLauncher_xj400", "RPGLauncher_xj400"] ]
 
-weaponsRespawnAI3 = [ [_wMP5SD6, "LAWLauncher", _nvg0], [_wGroza, "RPGLauncher", _nvg0] ]
-magsRespawnAI3 = [ [_mMP5SD6, _mMP5SD6, _mMP5SD6, "LAWLauncher", "LAWLauncher", "LAWLauncher"], [_mGroza, _mGroza, _mGroza, "RPGLauncher", "RPGLauncher", "RPGLauncher"] ]
+weaponsRespawnAI3 = [ [_wMP5SD6, "LAWLauncher_xj400", _nvg0], ["SVDDragunov", "RPGLauncher_xj400", _nvg0] ]
+magsRespawnAI3 = [ [_mMP5SD6, _mMP5SD6, _mMP5SD6, "LAWLauncher_xj400", "LAWLauncher_xj400", "LAWLauncher_xj400"], ["SVDDragunov", "SVDDragunov", "SVDDragunov", "RPGLauncher_xj400", "RPGLauncher_xj400", "RPGLauncher_xj400"] ]
 
-weaponsRespawnAI4 = [ ["G36a", "LAWLauncher", _nvg0], [w_TZK_AK107, "RPGLauncher", _nvg0] ]
-magsRespawnAI4 = [ ["G36aMag", "G36aMag", "G36aMag", "LAWLauncher", "LAWLauncher", "LAWLauncher"], [m_TZK_AK107, m_TZK_AK107, m_TZK_AK107, "RPGLauncher", "RPGLauncher", "RPGLauncher"] ]
+weaponsRespawnAI4 = [ ["G36a", "LAWLauncher_xj400", _nvg0], [w_TZK_AK107, "RPGLauncher_xj400", _nvg0] ]
+magsRespawnAI4 = [ ["G36aMag", "G36aMag", "G36aMag", "LAWLauncher_xj400", "LAWLauncher_xj400", "LAWLauncher_xj400"], [m_TZK_AK107, m_TZK_AK107, m_TZK_AK107, "RPGLauncher_xj400", "RPGLauncher_xj400", "RPGLauncher_xj400"] ]
 
 
 
 weaponsRespawnAI5 = [ [_wM249SD, _hyperL, _nvg1], [_wRPK74SD, _hyperL, _nvg1] ]
-magsRespawnAI5 = [ [_mM249SD, _carl4slot, _aa4slot, magPistolMine, magPistolMine], [_mRPK74SD, _mRPK74SD, _at44slot, _9k324slot, magPistolMine, magPistolMine] ]
+magsRespawnAI5 = [ [_mM249SD, _carl4slot, _carl4slot, magPistolMine, magPistolMine], [_mRPK74SD, _mRPK74SD, _mRPK74SD, _mRPK74SD, _at44slot, _9k324slot, magPistolMine, magPistolMine] ]
 
 weaponsRespawnAI6 = [ ["M21", _hyperL, _nvg1], ["SVDDragunov", _hyperL, _nvg1] ]
-magsRespawnAI6 = [ ["M21", "M21", _carl4slot, _aa4slot, magPistolMine, magPistolMine], ["SVDDragunov", "SVDDragunov", _at44slot, _9k324slot, magPistolMine, magPistolMine] ]
+magsRespawnAI6 = [ ["M21", "M21", _carl4slot, _carl4slot, magPistolMine, magPistolMine], ["SVDDragunov", "SVDDragunov", "SVDDragunov", "SVDDragunov", _at44slot, _9k324slot, magPistolMine, magPistolMine] ]
 
 weaponsRespawnAI7 = [ ["M21", "CarlGustavLauncher", "Put", _nvg0], [w_TZK_SniperE, "AT4Launcher","Put", _nvg0] ]
 magsRespawnAI7 = [ ["M21", "M21", "CarlGustavLauncher", magSatchel], [m_TZK_SniperE, m_TZK_SniperE, "AT4Launcher", magSatchel] ]
@@ -216,7 +216,7 @@ equipSearch set [_type, (equipDefs select _type) select edObject]
 _atm60e4mag = _type
 _type = _type + 1
 
-equipDefs set [_type, ["MM1", si0, isGeneral, 8, "MM1Magazine", "\mm-1\m_mm1",70 ]] 
+equipDefs set [_type, ["MM1", si0, isHandgun, 1, "MM1Magazine_xj400", "\dtaExt\equip\m\m_flaregreen.paa",70 ]] 
 equipSearch set [_type, (equipDefs select _type) select edObject]
 _atMM1 = _type
 _type = _type + 1
@@ -226,7 +226,7 @@ equipSearch set [_type, (equipDefs select _type) select edObject]
 _atM60 = _type
 _type = _type + 1
 
-equipDefs set [_type, ["LAW", si0, isGeneral, 2, "LAWLauncher", "\dtaExt\equip\m\m_lawlauncher",20 ]] 
+equipDefs set [_type, ["LAW", si0, isGeneral, 2, "LAWLauncher_xj400", "\dtaExt\equip\m\m_lawlauncher",20 ]] 
 equipSearch set [_type, (equipDefs select _type) select edObject]
 _atLAW = _type
 _type = _type + 1
@@ -245,11 +245,11 @@ equipDefs set [_type, ["Stinger", si0, isGeneral, 6, "AALauncher", "\dtaExt\equi
 equipSearch set [_type, (equipDefs select _type) select edObject]
 _atStinger = _type
 _type = _type + 1
-equipDefs set [_type, ["CarlGustav*", si0, isGeneral, 4, _carl4slot, "\dtaExt\equip\m\m_carlgustavlauncher",60 ]] 
+equipDefs set [_type, ["CarlGustav*", si0, isGeneral, 3, _carl4slot, "\dtaExt\equip\m\m_carlgustavlauncher",60 ]] 
 equipSearch set [_type, (equipDefs select _type) select edObject]
 _atCarlGustav2 = _type
 _type = _type + 1
-equipDefs set [_type, ["Stinger*", si0, isGeneral, 4, _aa4slot, "\dtaExt\equip\m\m_aalauncher",100 ]] 
+equipDefs set [_type, ["Stinger*", si0, isGeneral, 3, _aa4slot, "\dtaExt\equip\m\m_aalauncher",100 ]] 
 equipSearch set [_type, (equipDefs select _type) select edObject]
 _atStinger2 = _type
 _type = _type + 1
@@ -367,12 +367,12 @@ equipSearch set [_type, (equipDefs select _type) select edObject]
 _atPK = _type
 _type = _type + 1
 
-equipDefs set [_type, ["6G30", si1, isGeneral, 4, "6G30Magazine", "\6G30\m_6g30",35 ]] 
+equipDefs set [_type, ["6G30", si1, isHandgun, 1, "6G30Magazine_xj400", "\dtaExt\equip\m\m_flarered.paa",35 ]] 
 equipSearch set [_type, (equipDefs select _type) select edObject]
 _at6G30 = _type
 _type = _type + 1
 
-equipDefs set [_type, ["RPG", si1, isGeneral, 2, "RPGLauncher", "\dtaExt\equip\m\m_rpglauncher",20 ]] 
+equipDefs set [_type, ["RPG", si1, isGeneral, 2, "RPGLauncher_xj400", "\dtaExt\equip\m\m_rpglauncher",20 ]] 
 equipSearch set [_type, (equipDefs select _type) select edObject]
 _atRPG = _type
 _type = _type + 1
@@ -391,11 +391,11 @@ equipDefs set [_type, ["Strela", si1, isGeneral, 6, "9K32Launcher", "\dtaExt\equ
 equipSearch set [_type, (equipDefs select _type) select edObject]
 _atStrela = _type
 _type = _type + 1
-equipDefs set [_type, ["AT4*", si1, isGeneral, 4, _at44slot, "\dtaExt\equip\m\m_at4launcher",60 ]] 
+equipDefs set [_type, ["AT4*", si1, isGeneral, 3, _at44slot, "\dtaExt\equip\m\m_at4launcher",60 ]] 
 equipSearch set [_type, (equipDefs select _type) select edObject]
 _atAT42 = _type
 _type = _type + 1
-equipDefs set [_type, ["Strela*", si1, isGeneral, 4, _9k324slot, "\dtaExt\equip\m\m_9k32launcher",100 ]] 
+equipDefs set [_type, ["Strela*", si1, isGeneral, 3, _9k324slot, "\dtaExt\equip\m\m_9k32launcher",100 ]] 
 equipSearch set [_type, (equipDefs select _type) select edObject]
 _atStrela2 = _type
 _type = _type + 1
@@ -636,11 +636,11 @@ weaponSearch set [_type, (weaponDefs select _type) select wdObject]
 _wtM260e4 = _type
 _type = _type + 1
 
-weaponDefs set [_type, ["MM1", si0, wtPrimaryOnly, "MM1", "\MM-1\mm-1", [[_atMM1,1]],20 ]] 
+weaponDefs set [_type, ["MM1", si0, wtHandgun, "MM1_xj400", "\MM-1\mm-1", [[_atMM1,4]],20 ]] 
 weaponSearch set [_type, (weaponDefs select _type) select wdObject]
 _type = _type + 1
 
-weaponDefs set [_type, ["LAW", si0, wtSecondary, "LAWLauncher", "\dtaExt\equip\w\w_lawlauncher", [[_atLAW,3]],40 ]] 
+weaponDefs set [_type, ["LAW", si0, wtSecondary, "LAWLauncher_xj400", "\dtaExt\equip\w\w_lawlauncher", [[_atLAW,3]],40 ]] 
 weaponSearch set [_type, (weaponDefs select _type) select wdObject]
 _type = _type + 1
 
@@ -762,11 +762,11 @@ weaponSearch set [_type, (weaponDefs select _type) select wdObject]
 _wtPKM = _type
 _type = _type + 1
 
-weaponDefs set [_type, ["6G30", si1, wtPrimaryOnly, "6G30", "\6G30\6G30", [[_at6G30,2]],20 ]] 
+weaponDefs set [_type, ["6G30", si1, wtHandgun, "6G30_xj400", "\6G30\6G30", [[_at6G30,4]],20 ]] 
 weaponSearch set [_type, (weaponDefs select _type) select wdObject]
 _type = _type + 1
 
-weaponDefs set [_type, ["RPG", si1, wtSecondary, "RPGLauncher", "\dtaExt\equip\w\w_rpglauncher", [[_atRPG,3]],40 ]] 
+weaponDefs set [_type, ["RPG", si1, wtSecondary, "RPGLauncher_xj400", "\dtaExt\equip\w\w_rpglauncher", [[_atRPG,3]],40 ]] 
 weaponSearch set [_type, (weaponDefs select _type) select wdObject]
 _type = _type + 1
 
@@ -813,10 +813,9 @@ weaponDefs set [_type, ["Laser", siBoth, wtSecondary, "LaserDesignator", "\dtaEx
 weaponSearch set [_type, (weaponDefs select _type) select wdObject]
 _type = _type + 1
 
-weaponDefs set [_type, ["HyperLauncher", -1, wtSecondary, _hyperL, "\dtaExt\equip\w\w_carlgustavlauncher", [[_atCarlGustav2,0],[_atStinger2,0],[_atAT42,0],[_atStrela2,0]],150 ]] 
+weaponDefs set [_type, ["HyperLauncher", siBoth, wtSecondary, _hyperL, "\dtaExt\equip\w\w_carlgustavlauncher", [[_atCarlGustav2,0],[_atStinger2,0],[_atAT42,0],[_atStrela2,0]],150 ]] 
 weaponSearch set [_type, (weaponDefs select _type) select wdObject]
 _type = _type + 1
-
 
 weaponDefs set [_type, ["Binoculars", siBoth, wtBinocular, "Binocular", "\dtaExt\equip\w\w_binocular", [], 0 ]] 
 weaponSearch set [_type, (weaponDefs select _type) select wdObject]

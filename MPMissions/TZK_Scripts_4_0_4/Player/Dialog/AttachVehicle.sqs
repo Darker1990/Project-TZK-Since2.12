@@ -5,9 +5,9 @@ _tugslot = _this select 1
 _tugType = _this select 2
 
 _massLimit = 1000000; _distMax = 0
-? (_tugType == ttHeli): _distMax = 30; _massLimit = 6000
+? (_tugType == ttHeli): _distMax = 30; 
 ? (_tugType == ttBoat): _distMax = 50;
-? (_tugType == ttTruck): _distMax = 20; _massLimit = 9999
+? (_tugType == ttTruck): _distMax = 20; 
 ? (_tugType == ttAPC): _distMax = 20; 
 
 _vs = [_tug, _massLimit, _distMax] call loadFile "\TZK_Scripts_4_0_4\Player\Dialog\AttachVehicle_Vehicles.sqf"
@@ -54,7 +54,7 @@ ctrlShow [IDC_DialogBG_CR, !bool_TZK_DarkSkin]; ctrlShow [IDC_DialogBG_Light, bo
 	? call dlgUpdated: exit
 	? !(alive _tug) : closeDialog 0; exit
 
-	_vs = [_tug, _massLimit, _distMax] call loadFile "\TZK_Scripts_4_0_4\Player\Dialog\AttachVehicle_Vehicles.sqf"
+	_vs = [_tug, _distMax] call loadFile "\TZK_Scripts_4_0_4\Player\Dialog\AttachVehicle_Vehicles.sqf"
 	[_vs, _idcList, _veh1] call loadFile "\TZK_Scripts_4_0_4\Player\Dialog\AttachVehicle_List.sqf"
 
 	? btnAction0 : btnAction0=false; goto "AttachVehicle"

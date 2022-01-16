@@ -3,7 +3,7 @@
 _v = _this select 0; _t = _this select 1
 
 rand = (random 2) - 0.5
-_m = [[m_TZK_AK107, m_TZK_AK107, m_TZK_AK107, m_TZK_AK107, "9K32Launcher"], ["G36aMag", "G36aMag", "G36aMag", "G36aMag", "AALauncher"]] select rand
-_w = [[w_TZK_AK107, "9K32Launcher"], ["G36a", "AALauncher"]] select rand
+_m = [["M60_Mag_xj400", "M60_Mag_xj400", "AAIn4_xj400", "AAIn4_xj400"], ["PKM_Mag_xj400", "PKM_Mag_xj400", "9k32In4_xj400", "9k32In4_xj400"]] select rand
+_w = [["M60e4_xj400", "HyperLauncher_xj400"], ["PKM_1P29_xj400", "HyperLauncher_xj400"]] select rand
 
 [_v, _t, _m, _w] exec "\TZK_Scripts_4_0_4\Common\Equip\GeneralSoldier.sqs"

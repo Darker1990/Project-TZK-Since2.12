@@ -32,7 +32,7 @@ pvAfterBurnerON = _plane; publicVariable "pvAfterBurnerON"
 ?(!isengineon _plane) : goto "Quit"
 
 ; Acc. factor
-_factor = ((900 - (speed _plane)) / 50000) + 1;
+_factor = ((1100 - (speed _plane)) / 50000) + 1;
 
 ; Change the velocity
 _vel = velocity _plane

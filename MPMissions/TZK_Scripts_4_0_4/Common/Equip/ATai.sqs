@@ -2,7 +2,7 @@
 
 _v = _this select 0; _t = _this select 1
 _si = _this select 2
-_m = [["M21", "M21", magSatchel, "CarlGustavLauncher"], [m_TZK_SniperE, m_TZK_SniperE, magSatchel, "AT4Launcher"]] select _si
-_w = [["M21", "CarlGustavLauncher", "NVGoggles"], [w_TZK_SniperE, "AT4Launcher", "NVGoggles"]] select _si
+_m = [["M21", "M21", "M21", "M21", "CarlGustavIn4_xj400", "CarlGustavIn4_xj400"], [m_TZK_SniperE, m_TZK_SniperE, m_TZK_SniperE, m_TZK_SniperE, "AT4In4_xj400", "AT4In4_xj400"]] select _si
+_w = [["M21", "HyperLauncher_xj400", "NVGoggles"], [w_TZK_SniperE, "HyperLauncher_xj400", "NVGoggles"]] select _si
 
 [_v, _t, _m, _w] exec "\TZK_Scripts_4_0_4\Common\Equip\GeneralSoldier.sqs"

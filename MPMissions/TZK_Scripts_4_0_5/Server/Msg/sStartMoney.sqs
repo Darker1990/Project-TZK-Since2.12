@@ -13,9 +13,8 @@ _i = 0; _siArray = [si0, si1]; _c = count _siArray
 	? !dev && (groupMatrix select _si select 0) in (groupAiMatrix select _si): if (_countPlayers > 0) Then {_startMoneyPlayer = 0.5*_startMoney/_countPlayers}
 	? !dev && _startMoneyPlayer > 8000: _startMoneyPlayer = 8000
 	? bool_TZK_MF_Mode: _startMoneyPlayer = 2000
-	while "_countPlayers*_startMoneyPlayer > 0.5*_startMoney" do { _startMoneyPlayer = 0.5*_startMoneyPlayer }
-
-	_startMoneyPlayer = _startMoneyPlayer - (_startMoneyPlayer % 1)
+	
+	_startMoneyPlayer = _startMoneyPlayer + 1000
 	_moneyRequest = moneyRequest select _si
 	_index = 0
 	#InitSideMoney
@@ -24,7 +23,7 @@ _i = 0; _siArray = [si0, si1]; _c = count _siArray
 		? _group in (groupAiMatrix select _si) : goto "SkipGroupSide"
 		
 		[_si, _index, _startMoneyPlayer, 1] exec "\TZK_Scripts_4_0_4\Server\MoneyAdd.sqs"
-		_startMoney = _startMoney - _startMoneyPlayer
+		_startMoney = _startMoney + 1000
 
 		#SkipGroupSide
 		_moneyRequest set [_index, 0]

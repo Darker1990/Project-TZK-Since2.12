@@ -21,7 +21,7 @@ mhq = [objNull, objNull, objNull, objNull, objNull]
 MCV = [ [], [], [], [], [] ]
 costWorker = 400
 maxWorkers = [10, 10]
-rangeSupport = 25; rangeSupportPlane = 30; rangeGetPlaneFlyingStatus = 150
+rangeSupport = 25; rangeSupportPlane = 1000; rangeGetPlaneFlyingStatus = 150
 sendDelay = 1.0
 deleteUnitDelay = [3*60, 60] select dev
 maxFlightAltitude = 800

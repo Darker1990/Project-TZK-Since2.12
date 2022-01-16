@@ -10,11 +10,11 @@ _vs = [getPos _tug, _distMax, [], [_tug]] call funcGetNearbyVehicles; _vehicles 
 {
 	_vehicle = _x select 0;
 	if !bool_TZK_199_Mode Then {_mass = getMass _vehicle} Else {
-		if ("Tank" countType [_vehicle] > 0) Then {_mass = 50000} Else {
+		if ("Tank" countType [_vehicle] > 0) Then {_mass = 5000} Else {
 		if ("Car" countType [_vehicle] > 0) Then {_mass = 5000} Else {
 		if ("Ship" countType [_vehicle] > 0) Then {_mass = 5000} Else {
 		if ("Helicopter" countType [_vehicle] > 0) Then {_mass = 5000} Else {
-		if ("Plane" countType [_vehicle] > 0) Then {_mass = 10000} Else {
+		if ("Plane" countType [_vehicle] > 0) Then {_mass = 5000} Else {
 		_mass = 5000}}}}}
 	};
 	if (_mass < _massLimit) then {
